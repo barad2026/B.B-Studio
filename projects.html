@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,24 +18,16 @@
         :root {
             --bg: #070b12;
             --bg-soft: #0d1420;
-
             --card: rgba(255,255,255,.045);
             --card-hover: rgba(255,255,255,.075);
-
             --header: rgba(7,11,18,.78);
-
             --text: #ffffff;
             --muted: #aab4c3;
-
             --border: rgba(255,255,255,.09);
-
             --accent: #329cff;
             --accent-2: #78c5ff;
-
             --success: #71e3a3;
-
             --shadow: 0 25px 80px rgba(0,0,0,.38);
-
             --radius: 24px;
             --max-width: 1180px;
         }
@@ -42,20 +35,14 @@
         body.light {
             --bg: #f5f9ff;
             --bg-soft: #eaf2fc;
-
             --card: rgba(255,255,255,.75);
             --card-hover: rgba(255,255,255,.95);
-
             --header: rgba(245,249,255,.82);
-
             --text: #101722;
             --muted: #5f6d7d;
-
             --border: rgba(10,40,80,.10);
-
             --accent: #147fe8;
             --accent-2: #55aef5;
-
             --shadow: 0 25px 70px rgba(30,80,130,.12);
         }
 
@@ -111,10 +98,8 @@
 
         header {
             position: fixed;
-
             top: 18px;
             left: 50%;
-
             transform: translateX(-50%);
 
             width: min(calc(100% - 30px), 1200px);
@@ -122,7 +107,6 @@
             z-index: 1000;
 
             background: var(--header);
-
             border: 1px solid var(--border);
 
             backdrop-filter: blur(20px);
@@ -138,11 +122,9 @@
 
             display: flex;
             align-items: center;
-
             justify-content: space-between;
 
             padding: 10px 18px;
-
             gap: 20px;
         }
 
@@ -163,7 +145,6 @@
             height: 42px;
 
             object-fit: cover;
-
             border-radius: 50%;
 
             border: 1px solid var(--border);
@@ -190,7 +171,6 @@
         .links {
             display: flex;
             align-items: center;
-
             gap: 7px;
         }
 
@@ -201,8 +181,7 @@
 
             border-radius: 12px;
 
-            transition:
-                .25s ease;
+            transition: .25s ease;
         }
 
         .links a:hover {
@@ -229,11 +208,9 @@
             justify-content: center;
 
             border: 1px solid var(--border);
-
             border-radius: 12px;
 
             background: var(--card);
-
             color: var(--text);
 
             cursor: pointer;
@@ -245,7 +222,6 @@
 
         .theme-btn:hover {
             background: var(--card-hover);
-
             transform: translateY(-2px);
         }
 
@@ -280,6 +256,7 @@
         .badge {
             display: inline-flex;
             align-items: center;
+
             gap: 8px;
 
             padding: 8px 13px;
@@ -385,7 +362,6 @@
 
         .section-heading p {
             color: var(--muted);
-
             font-size: 14px;
         }
 
@@ -408,7 +384,6 @@
 
         .project-card {
             position: relative;
-
             overflow: hidden;
 
             padding: 28px;
@@ -514,7 +489,6 @@
             border-radius: 999px;
 
             font-size: 12px;
-
             font-weight: 700;
 
             white-space: nowrap;
@@ -542,7 +516,6 @@
 
         .project-card h3 {
             font-size: 24px;
-
             margin-bottom: 13px;
         }
 
@@ -550,7 +523,6 @@
             color: var(--muted);
 
             line-height: 1.95;
-
             font-size: 14px;
 
             flex: 1;
@@ -574,9 +546,11 @@
 
             border-radius: 9px;
 
-            background: rgba(255,255,255,.035);
+            background:
+                rgba(255,255,255,.035);
 
-            border: 1px solid var(--border);
+            border:
+                1px solid var(--border);
         }
 
         /* =========================
@@ -637,7 +611,6 @@
 
         .featured h3 {
             font-size: 30px;
-
             margin-bottom: 15px;
         }
 
@@ -654,7 +627,8 @@
 
             border-radius: 20px;
 
-            border: 1px solid var(--border);
+            border:
+                1px solid var(--border);
 
             background:
                 radial-gradient(
@@ -665,6 +639,7 @@
                 rgba(255,255,255,.025);
 
             display: flex;
+
             align-items: center;
             justify-content: center;
 
@@ -712,7 +687,6 @@
 
         .cta h2 {
             font-size: 31px;
-
             margin-bottom: 13px;
         }
 
@@ -723,11 +697,13 @@
 
             max-width: 650px;
 
-            margin: auto auto 24px;
+            margin:
+                auto auto 24px;
         }
 
         .cta-btn {
             display: inline-flex;
+
             align-items: center;
             justify-content: center;
 
@@ -872,20 +848,25 @@
 
         <nav class="nav">
 
-            <a class="brand" href="index.html">
-
+            <!-- مستقیم به GitHub Pages -->
+            <a
+                class="brand"
+                href="https://barad2026.github.io/B.B-Studio/"
+            >
                 <img
                     src="assets/logo.png"
                     alt="B&B Studio"
                 >
 
                 <span>B&B Studio</span>
-
             </a>
 
             <div class="links">
 
-                <a href="index.html">
+                <!-- مستقیم به GitHub Pages -->
+                <a
+                    href="https://barad2026.github.io/B.B-Studio/"
+                >
                     خانه
                 </a>
 
@@ -956,9 +937,11 @@
             <div class="section-heading">
 
                 <div>
+
                     <h2>
                         پروژه‌های تکمیل‌شده
                     </h2>
+
                 </div>
 
                 <p>
@@ -1103,9 +1086,11 @@
             <div class="section-heading">
 
                 <div>
+
                     <h2>
                         به‌زودی
                     </h2>
+
                 </div>
 
                 <p>
@@ -1316,8 +1301,11 @@
 
     <footer>
 
-        © <span id="year"></span>
+        ©
+        <span id="year"></span>
+
         <strong>B&B Studio</strong>
+
         — ایده‌ها را واقعی می‌کنیم.
 
     </footer>
@@ -1334,6 +1322,7 @@
 
         const savedTheme =
             localStorage.getItem("bb-theme");
+
 
         if (savedTheme === "light") {
 
@@ -1375,4 +1364,5 @@
     </script>
 
 </body>
+
 </html>
