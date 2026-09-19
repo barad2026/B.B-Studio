@@ -226,7 +226,13 @@
 
             object-fit: contain;
 
-            border-radius: 11px;
+            border-radius: 50%;
+
+            border: 1px solid var(--border);
+
+            box-shadow:
+                0 0 0 4px rgba(50,156,255,.07),
+                0 8px 25px rgba(0,0,0,.15);
         }
 
 
@@ -1383,9 +1389,10 @@
     <nav class="nav">
 
 
+        <!-- مستقیم به GitHub Pages -->
         <a
             class="brand"
-            href="index.html"
+            href="https://barad2026.github.io/B.B-Studio/"
         >
 
             <img
@@ -1402,7 +1409,10 @@
 
         <div class="links">
 
-            <a href="index.html">
+            <!-- مستقیم به GitHub Pages -->
+            <a
+                href="https://barad2026.github.io/B.B-Studio/"
+            >
                 خانه
             </a>
 
@@ -1427,6 +1437,7 @@
         <button
             class="theme-btn"
             id="themeBtn"
+            type="button"
             aria-label="تغییر حالت"
         >
             ☀️
@@ -2155,6 +2166,9 @@
         body.classList.add("light");
 
         themeBtn.textContent = "🌙";
+    } else {
+
+        themeBtn.textContent = "☀️";
     }
 
 
