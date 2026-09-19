@@ -1,0 +1,2201 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>درباره ما | B&B Studio</title>
+
+    <meta
+        name="description"
+        content="درباره B&B Studio؛ داستان، اهداف، ارزش‌ها و پروژه‌های یک استودیوی فناوری و خلاق."
+    >
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="shortcut icon" href="assets/logo.png">
+
+    <style>
+
+        /* =========================================
+           VARIABLES
+        ========================================= */
+
+        :root {
+            --bg: #070b12;
+            --bg-soft: #0d1420;
+
+            --card: rgba(255,255,255,.045);
+            --card-hover: rgba(255,255,255,.075);
+
+            --header: rgba(7,11,18,.78);
+
+            --text: #ffffff;
+            --muted: #aab4c3;
+
+            --border: rgba(255,255,255,.09);
+
+            --accent: #329cff;
+            --accent-2: #78c5ff;
+
+            --success: #71e3a3;
+
+            --shadow:
+                0 25px 80px rgba(0,0,0,.38);
+
+            --radius: 24px;
+            --max-width: 1180px;
+        }
+
+
+        /* =========================================
+           LIGHT MODE
+        ========================================= */
+
+        body.light {
+
+            --bg: #f5f9ff;
+            --bg-soft: #eaf2fc;
+
+            --card: rgba(255,255,255,.75);
+            --card-hover: rgba(255,255,255,.95);
+
+            --header: rgba(245,249,255,.82);
+
+            --text: #101722;
+            --muted: #5f6d7d;
+
+            --border: rgba(10,40,80,.10);
+
+            --accent: #147fe8;
+            --accent-2: #55aef5;
+
+            --success: #229653;
+
+            --shadow:
+                0 25px 70px rgba(30,80,130,.12);
+        }
+
+
+        /* =========================================
+           RESET
+        ========================================= */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            font-family:
+                Tahoma,
+                Arial,
+                sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at 15% 15%,
+                    rgba(50,156,255,.12),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 85% 30%,
+                    rgba(50,156,255,.08),
+                    transparent 30%
+                ),
+                var(--bg);
+
+            color: var(--text);
+
+            line-height: 1.8;
+
+            transition: .3s ease;
+
+            overflow-x: hidden;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+        .container {
+
+            width:
+                min(
+                    100% - 40px,
+                    var(--max-width)
+                );
+
+            margin: auto;
+        }
+
+
+        /* =========================================
+           HEADER — SAME STYLE AS HOME
+        ========================================= */
+
+        header {
+
+            position: fixed;
+
+            top: 18px;
+            left: 50%;
+
+            transform:
+                translateX(-50%);
+
+            width:
+                min(
+                    100% - 30px,
+                    1200px
+                );
+
+            z-index: 1000;
+
+            background:
+                var(--header);
+
+            border:
+                1px solid
+                var(--border);
+
+            backdrop-filter:
+                blur(20px);
+
+            -webkit-backdrop-filter:
+                blur(20px);
+
+            border-radius: 20px;
+
+            box-shadow:
+                var(--shadow);
+        }
+
+
+        .nav {
+
+            min-height: 72px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            padding:
+                10px 18px;
+
+            gap: 20px;
+        }
+
+
+        /* LOGO */
+
+        .brand {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 11px;
+
+            font-weight: 900;
+
+            font-size: 19px;
+
+            white-space: nowrap;
+        }
+
+
+        .brand img {
+
+            width: 42px;
+            height: 42px;
+
+            object-fit: contain;
+
+            border-radius: 11px;
+        }
+
+
+        .brand span {
+
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--text),
+                    var(--accent)
+                );
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+        }
+
+
+        /* NAV LINKS */
+
+        .links {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 7px;
+        }
+
+
+        .links a {
+
+            padding:
+                9px 14px;
+
+            color: var(--muted);
+
+            border-radius: 12px;
+
+            transition: .2s ease;
+        }
+
+
+        .links a:hover,
+        .links a.active {
+
+            color: var(--text);
+
+            background:
+                var(--card-hover);
+        }
+
+
+        /* THEME */
+
+        .theme-btn {
+
+            border:
+                1px solid
+                var(--border);
+
+            background:
+                var(--card);
+
+            color:
+                var(--text);
+
+            width: 42px;
+            height: 42px;
+
+            border-radius: 12px;
+
+            cursor: pointer;
+
+            font-size: 18px;
+
+            transition: .2s ease;
+        }
+
+
+        .theme-btn:hover {
+
+            transform:
+                translateY(-2px);
+
+            background:
+                var(--card-hover);
+        }
+
+
+        /* =========================================
+           HERO
+        ========================================= */
+
+        .hero {
+
+            min-height: 78vh;
+
+            display: flex;
+
+            align-items: center;
+
+            padding:
+                155px 0 80px;
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+
+        .hero::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 500px;
+            height: 500px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(50,156,255,.14);
+
+            filter:
+                blur(100px);
+
+            top: 5%;
+
+            right: -160px;
+
+            pointer-events: none;
+        }
+
+
+        .hero::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 350px;
+            height: 350px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(50,156,255,.08);
+
+            filter:
+                blur(90px);
+
+            bottom: -180px;
+
+            left: -100px;
+
+            pointer-events: none;
+        }
+
+
+        .hero-content {
+
+            max-width: 900px;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        .badge {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+            padding:
+                8px 14px;
+
+            border:
+                1px solid
+                var(--border);
+
+            background:
+                var(--card);
+
+            border-radius: 999px;
+
+            color:
+                var(--accent-2);
+
+            font-size: 13px;
+
+            margin-bottom: 22px;
+        }
+
+
+        .badge::before {
+
+            content: "";
+
+            width: 7px;
+            height: 7px;
+
+            background:
+                var(--success);
+
+            border-radius: 50%;
+
+            box-shadow:
+                0 0 12px
+                var(--success);
+        }
+
+
+        .hero h1 {
+
+            font-size:
+                clamp(
+                    44px,
+                    7vw,
+                    78px
+                );
+
+            line-height: 1.08;
+
+            letter-spacing:
+                -2px;
+
+            margin-bottom: 25px;
+        }
+
+
+        .gradient {
+
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--accent),
+                    var(--accent-2)
+                );
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+        }
+
+
+        .hero p {
+
+            max-width: 760px;
+
+            color:
+                var(--muted);
+
+            font-size: 18px;
+
+            margin-bottom: 34px;
+        }
+
+
+        .buttons {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+        }
+
+
+        /* =========================================
+           BUTTONS
+        ========================================= */
+
+        .btn {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding:
+                13px 20px;
+
+            border-radius: 14px;
+
+            border:
+                1px solid
+                var(--border);
+
+            transition: .25s ease;
+
+            font-weight: 700;
+        }
+
+
+        .btn-primary {
+
+            background:
+                var(--accent);
+
+            color: white;
+
+            border-color:
+                transparent;
+
+            box-shadow:
+                0 10px 35px
+                rgba(50,156,255,.22);
+        }
+
+
+        .btn-primary:hover {
+
+            transform:
+                translateY(-3px);
+
+            box-shadow:
+                0 15px 45px
+                rgba(50,156,255,.32);
+        }
+
+
+        .btn-secondary {
+
+            background:
+                var(--card);
+
+            color:
+                var(--text);
+        }
+
+
+        .btn-secondary:hover {
+
+            background:
+                var(--card-hover);
+
+            transform:
+                translateY(-3px);
+        }
+
+
+        /* =========================================
+           SECTIONS
+        ========================================= */
+
+        section {
+
+            padding:
+                95px 0;
+        }
+
+
+        .section-title {
+
+            margin-bottom:
+                45px;
+        }
+
+
+        .section-title span {
+
+            color:
+                var(--accent);
+
+            font-size: 14px;
+
+            font-weight: 800;
+        }
+
+
+        .section-title h2 {
+
+            font-size:
+                clamp(
+                    30px,
+                    5vw,
+                    48px
+                );
+
+            line-height: 1.2;
+
+            margin-top: 8px;
+        }
+
+
+        .section-title p {
+
+            color:
+                var(--muted);
+
+            margin-top: 12px;
+
+            max-width: 750px;
+        }
+
+
+        /* =========================================
+           ABOUT INTRO
+        ========================================= */
+
+        .about-layout {
+
+            display: grid;
+
+            grid-template-columns:
+                1.35fr .65fr;
+
+            gap: 18px;
+        }
+
+
+        .main-card,
+        .info-card {
+
+            padding: 32px;
+
+            border:
+                1px solid
+                var(--border);
+
+            background:
+                var(--card);
+
+            border-radius:
+                var(--radius);
+
+            transition: .25s ease;
+        }
+
+
+        .main-card:hover,
+        .info-card:hover {
+
+            transform:
+                translateY(-6px);
+
+            background:
+                var(--card-hover);
+
+            border-color:
+                rgba(50,156,255,.28);
+        }
+
+
+        .main-card {
+
+            min-height: 380px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: space-between;
+        }
+
+
+        .main-card h3 {
+
+            font-size: 30px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .main-card p {
+
+            color:
+                var(--muted);
+
+            margin-bottom: 14px;
+        }
+
+
+        .main-card-bottom {
+
+            display: flex;
+
+            align-items: end;
+
+            justify-content:
+                space-between;
+
+            gap: 20px;
+
+            margin-top: 30px;
+        }
+
+
+        .build-text {
+
+            font-weight: 700;
+        }
+
+
+        .build-text strong {
+
+            color:
+                var(--text);
+        }
+
+
+        .build-text span {
+
+            color:
+                var(--accent);
+        }
+
+
+        .big-mark {
+
+            font-size: 75px;
+
+            font-weight: 900;
+
+            line-height: .9;
+
+            color:
+                rgba(50,156,255,.14);
+        }
+
+
+        .info-column {
+
+            display: grid;
+
+            gap: 18px;
+        }
+
+
+        .info-card {
+
+            min-height: 180px;
+        }
+
+
+        .icon {
+
+            width: 50px;
+            height: 50px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 15px;
+
+            background:
+                rgba(50,156,255,.12);
+
+            color:
+                var(--accent);
+
+            font-size: 16px;
+
+            font-weight: 900;
+
+            margin-bottom: 20px;
+        }
+
+
+        .info-card h3 {
+
+            font-size: 20px;
+
+            margin-bottom: 8px;
+        }
+
+
+        .info-card p {
+
+            color:
+                var(--muted);
+
+            font-size: 14px;
+        }
+
+
+        /* =========================================
+           STORY
+        ========================================= */
+
+        .story-card {
+
+            padding: 45px;
+
+            border:
+                1px solid
+                var(--border);
+
+            background:
+                var(--card);
+
+            border-radius:
+                var(--radius);
+
+            display: grid;
+
+            grid-template-columns:
+                .5fr 1.5fr;
+
+            gap: 50px;
+
+            align-items: center;
+
+            transition: .25s ease;
+        }
+
+
+        .story-card:hover {
+
+            background:
+                var(--card-hover);
+
+            border-color:
+                rgba(50,156,255,.28);
+        }
+
+
+        .story-logo {
+
+            display: grid;
+
+            place-items: center;
+        }
+
+
+        .logo-box {
+
+            width: 190px;
+            height: 190px;
+
+            border-radius: 42px;
+
+            display: grid;
+
+            place-items: center;
+
+            background:
+                radial-gradient(
+                    circle at 50% 40%,
+                    rgba(50,156,255,.18),
+                    transparent 65%
+                );
+
+            border:
+                1px solid
+                rgba(50,156,255,.22);
+
+            box-shadow:
+                0 25px 70px
+                rgba(50,156,255,.10);
+        }
+
+
+        .logo-box img {
+
+            width: 125px;
+            height: 125px;
+
+            object-fit: contain;
+
+            border-radius: 50%;
+        }
+
+
+        .story-content h2 {
+
+            font-size: 36px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .story-content p {
+
+            color:
+                var(--muted);
+
+            margin-bottom: 14px;
+        }
+
+
+        /* =========================================
+           VALUES
+        ========================================= */
+
+        .grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 18px;
+        }
+
+
+        .card {
+
+            padding: 28px;
+
+            border:
+                1px solid
+                var(--border);
+
+            background:
+                var(--card);
+
+            border-radius:
+                var(--radius);
+
+            transition: .25s ease;
+        }
+
+
+        .card:hover {
+
+            transform:
+                translateY(-6px);
+
+            background:
+                var(--card-hover);
+
+            border-color:
+                rgba(50,156,255,.28);
+        }
+
+
+        .card h3 {
+
+            font-size: 21px;
+
+            margin-bottom: 9px;
+        }
+
+
+        .card p {
+
+            color:
+                var(--muted);
+
+            font-size: 14px;
+        }
+
+
+        .value-number {
+
+            color:
+                var(--accent);
+
+            font-size: 13px;
+
+            font-weight: 900;
+
+            margin-bottom: 28px;
+        }
+
+
+        /* =========================================
+           PROJECTS
+        ========================================= */
+
+        .project {
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+
+        .project::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 180px;
+            height: 180px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(50,156,255,.07);
+
+            filter:
+                blur(45px);
+
+            top: -100px;
+
+            left: -80px;
+
+            pointer-events: none;
+        }
+
+
+        .project-tag {
+
+            display: inline-block;
+
+            color:
+                var(--accent-2);
+
+            background:
+                rgba(50,156,255,.10);
+
+            padding:
+                5px 10px;
+
+            border-radius:
+                999px;
+
+            font-size: 11px;
+
+            margin-bottom: 18px;
+        }
+
+
+        .project.completed {
+
+            border-color:
+                rgba(113,227,163,.18);
+        }
+
+
+        .project.completed .project-tag {
+
+            color:
+                var(--success);
+
+            background:
+                rgba(113,227,163,.09);
+        }
+
+
+        .project-status-text {
+
+            margin-top: 22px;
+
+            color:
+                var(--accent);
+
+            font-size: 12px;
+
+            font-weight: 800;
+        }
+
+
+        .project.completed .project-status-text {
+
+            color:
+                var(--success);
+        }
+
+
+        /* =========================================
+           VISION
+        ========================================= */
+
+        .vision {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding:
+                70px 45px;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius:
+                32px;
+
+            background:
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(50,156,255,.18),
+                    transparent 35%
+                ),
+                var(--card);
+
+            text-align: center;
+        }
+
+
+        .vision h2 {
+
+            position: relative;
+
+            font-size:
+                clamp(
+                    30px,
+                    5vw,
+                    48px
+                );
+
+            margin-bottom: 14px;
+        }
+
+
+        .vision p {
+
+            position: relative;
+
+            max-width: 750px;
+
+            margin: auto;
+
+            color:
+                var(--muted);
+        }
+
+
+        /* =========================================
+           CONTACT CTA
+        ========================================= */
+
+        .cta {
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius:
+                32px;
+
+            padding:
+                55px;
+
+            background:
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(50,156,255,.18),
+                    transparent 35%
+                ),
+                var(--card);
+
+            text-align: center;
+        }
+
+
+        .cta h2 {
+
+            font-size:
+                clamp(
+                    30px,
+                    5vw,
+                    48px
+                );
+
+            margin-bottom:
+                12px;
+        }
+
+
+        .cta p {
+
+            color:
+                var(--muted);
+
+            margin-bottom:
+                25px;
+        }
+
+
+        /* =========================================
+           FOOTER
+        ========================================= */
+
+        footer {
+
+            border-top:
+                1px solid
+                var(--border);
+
+            padding:
+                30px 0;
+
+            color:
+                var(--muted);
+
+            font-size: 13px;
+        }
+
+
+        .footer-inner {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content:
+                space-between;
+
+            gap: 20px;
+        }
+
+
+        /* =========================================
+           RESPONSIVE
+        ========================================= */
+
+        @media (max-width: 900px) {
+
+            .about-layout {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .story-card {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .story-logo {
+
+                order: -1;
+            }
+
+
+            .grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+        }
+
+
+        @media (max-width: 850px) {
+
+            .links a {
+
+                display: none;
+            }
+
+
+            .nav {
+
+                min-height: 64px;
+            }
+
+
+            .hero {
+
+                padding-top:
+                    135px;
+            }
+
+
+            .cta {
+
+                padding:
+                    35px 22px;
+            }
+        }
+
+
+        @media (max-width: 520px) {
+
+            .container {
+
+                width:
+                    min(
+                        100% - 25px,
+                        var(--max-width)
+                    );
+            }
+
+
+            .hero h1 {
+
+                font-size: 45px;
+            }
+
+
+            .hero p {
+
+                font-size: 16px;
+            }
+
+
+            .brand span {
+
+                font-size: 16px;
+            }
+
+
+            .brand img {
+
+                width: 36px;
+                height: 36px;
+            }
+
+
+            .main-card {
+
+                padding: 25px;
+            }
+
+
+            .story-card {
+
+                padding: 25px;
+            }
+
+
+            .logo-box {
+
+                width: 150px;
+                height: 150px;
+            }
+
+
+            .logo-box img {
+
+                width: 100px;
+                height: 100px;
+            }
+
+
+            .footer-inner {
+
+                flex-direction: column;
+
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header>
+
+    <nav class="nav">
+
+
+        <a
+            class="brand"
+            href="index.html"
+        >
+
+            <img
+                src="assets/logo.png"
+                alt="B&B Studio"
+            >
+
+            <span>
+                B&B Studio
+            </span>
+
+        </a>
+
+
+        <div class="links">
+
+            <a href="index.html">
+                خانه
+            </a>
+
+            <a
+                href="about.html"
+                class="active"
+            >
+                درباره ما
+            </a>
+
+            <a href="projects.html">
+                پروژه‌ها
+            </a>
+
+            <a href="contact.html">
+                ارتباط با ما
+            </a>
+
+        </div>
+
+
+        <button
+            class="theme-btn"
+            id="themeBtn"
+            aria-label="تغییر حالت"
+        >
+            ☀️
+        </button>
+
+
+    </nav>
+
+</header>
+
+
+<!-- =========================================
+     MAIN
+========================================= -->
+
+<main>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+
+                <div class="badge">
+
+                    B&B Studio —
+                    Technology & Creative Development
+
+                </div>
+
+
+                <h1>
+
+                    ما فقط
+                    <span class="gradient">
+                        ایده
+                    </span>
+                    نمی‌سازیم؛
+
+                    <br>
+
+                    آن‌ها را
+                    <span class="gradient">
+                        واقعی
+                    </span>
+                    می‌کنیم.
+
+                </h1>
+
+
+                <p>
+
+                    B&B Studio یک استودیوی فناوری و خلاق
+                    برای ساخت نرم‌افزار، بازی، وب‌سایت،
+                    ابزارهای دیجیتال و پروژه‌های خلاقانه است؛
+                    جایی که ایده‌ها از یک فکر ساده شروع می‌شوند
+                    و به پروژه‌های واقعی تبدیل می‌شوند.
+
+                </p>
+
+
+                <div class="buttons">
+
+                    <a
+                        class="btn btn-primary"
+                        href="#story"
+                    >
+                        داستان B&B Studio
+                    </a>
+
+
+                    <a
+                        class="btn btn-secondary"
+                        href="#projects"
+                    >
+                        پروژه‌های ما
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHAT IS B&B -->
+
+    <section>
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+                <span>
+                    WHO WE ARE
+                </span>
+
+                <h2>
+                    B&B Studio چیست؟
+                </h2>
+
+                <p>
+                    یک فضای تکنولوژی و خلاق برای ساختن،
+                    آزمایش کردن و تبدیل ایده‌ها به پروژه‌های واقعی.
+                </p>
+
+            </div>
+
+
+            <div class="about-layout">
+
+
+                <div class="main-card">
+
+                    <div>
+
+                        <h3>
+                            ساختن مهم‌تر از فقط فکر کردن است.
+                        </h3>
+
+
+                        <p>
+
+                            در B&B Studio ایده‌ها قرار نیست
+                            فقط در ذهن یا روی کاغذ باقی بمانند.
+                            ما تلاش می‌کنیم آن‌ها را طراحی کنیم،
+                            توسعه دهیم، آزمایش کنیم و در نهایت
+                            به چیزی تبدیل کنیم که بتوان آن را دید
+                            و تجربه کرد.
+
+                        </p>
+
+
+                        <p>
+
+                            از وب و نرم‌افزار گرفته تا بازی،
+                            ابزارهای دیجیتال و پروژه‌های خلاقانه،
+                            هر پروژه فرصتی برای یادگیری و ساختن
+                            چیز جدید است.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="main-card-bottom">
+
+                        <div class="build-text">
+
+                            <strong>
+                                Build.
+                            </strong>
+
+                            Create.
+
+                            <span>
+                                Explore.
+                            </span>
+
+                        </div>
+
+
+                        <div class="big-mark">
+                            B&B
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="info-column">
+
+
+                    <div class="info-card">
+
+                        <div class="icon">
+                            01
+                        </div>
+
+                        <h3>
+                            ساختن
+                        </h3>
+
+                        <p>
+                            ایده‌ها را به پروژه‌های قابل اجرا
+                            و قابل تجربه تبدیل می‌کنیم.
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <div class="icon">
+                            02
+                        </div>
+
+                        <h3>
+                            تجربه کردن
+                        </h3>
+
+                        <p>
+                            پروژه‌های جدید را امتحان می‌کنیم،
+                            از نتیجه یاد می‌گیریم و بهتر می‌شویم.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- STORY -->
+
+    <section id="story">
+
+        <div class="container">
+
+
+            <div class="story-card">
+
+
+                <div class="story-logo">
+
+                    <div class="logo-box">
+
+                        <img
+                            src="assets/logo.png"
+                            alt="B&B Studio"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="story-content">
+
+                    <div class="section-title">
+
+                        <span>
+                            OUR STORY
+                        </span>
+
+                    </div>
+
+
+                    <h2>
+                        داستان B&B Studio
+                    </h2>
+
+
+                    <p>
+
+                        B&B Studio از علاقه به ساختن،
+                        برنامه‌نویسی، طراحی و تجربه کردن
+                        پروژه‌های مختلف شکل گرفته است.
+
+                    </p>
+
+
+                    <p>
+
+                        هر پروژه یک فرصت است؛
+                        فرصتی برای یاد گرفتن یک تکنولوژی،
+                        حل کردن یک مشکل و ساختن چیزی
+                        که قبلاً وجود نداشته است.
+
+                    </p>
+
+
+                    <p>
+
+                        مسیر B&B Studio هنوز ادامه دارد.
+                        هدف این است که پروژه‌ها از ایده
+                        عبور کنند و به محصولات و تجربه‌های
+                        واقعی تبدیل شوند.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- VALUES -->
+
+    <section>
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+                <span>
+                    WHAT WE CARE ABOUT
+                </span>
+
+                <h2>
+                    چیزهایی که برای ما مهم‌اند
+                </h2>
+
+                <p>
+                    سه اصل ساده که مسیر پروژه‌های
+                    B&B Studio را شکل می‌دهند.
+                </p>
+
+            </div>
+
+
+            <div class="grid">
+
+
+                <div class="card">
+
+                    <div class="value-number">
+                        01 / IDEA
+                    </div>
+
+                    <h3>
+                        ایده
+                    </h3>
+
+                    <p>
+
+                        هر پروژه از یک فکر شروع می‌شود.
+                        ما ایده را بررسی می‌کنیم و دنبال
+                        راهی برای تبدیل آن به چیزی واقعی هستیم.
+
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="value-number">
+                        02 / BUILD
+                    </div>
+
+                    <h3>
+                        ساخت
+                    </h3>
+
+                    <p>
+
+                        یادگیری وقتی ارزش بیشتری دارد
+                        که بتوانیم چیزی واقعی بسازیم،
+                        اجرا کنیم و نتیجه را ببینیم.
+
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="value-number">
+                        03 / FUTURE
+                    </div>
+
+                    <h3>
+                        آینده
+                    </h3>
+
+                    <p>
+
+                        هر پروژه می‌تواند شروع پروژه‌ای
+                        بزرگ‌تر باشد. مسیر ما با یادگیری،
+                        آزمایش و ساختن ادامه پیدا می‌کند.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+                <span>
+                    PROJECTS
+                </span>
+
+                <h2>
+                    پروژه‌های B&B Studio
+                </h2>
+
+                <p>
+
+                    پروژه‌هایی که ساخته شده‌اند و ایده‌هایی
+                    که در مسیر تبدیل شدن به محصولات واقعی هستند.
+
+                </p>
+
+            </div>
+
+
+            <div class="grid">
+
+
+                <!-- COMPLETED -->
+
+                <div class="card project completed">
+
+                    <span class="project-tag">
+                        تکمیل شده
+                    </span>
+
+                    <h3>
+                        Ninja TablePro
+                    </h3>
+
+                    <p>
+
+                        یک افزونه WordPress برای کار با
+                        جدول‌ها و نمایش داده‌ها؛
+                        یکی از پروژه‌های تکمیل‌شده
+                        B&B Studio.
+
+                    </p>
+
+                    <div class="project-status-text">
+                        ✓ پروژه تکمیل شده
+                    </div>
+
+                </div>
+
+
+                <div class="card project completed">
+
+                    <span class="project-tag">
+                        تکمیل شده
+                    </span>
+
+                    <h3>
+                        بازی عملیاتی HTML
+                    </h3>
+
+                    <p>
+
+                        یک بازی عملیاتی گرافیکی ساخته‌شده
+                        با HTML؛ پروژه‌ای گیمینگ برای تجربه
+                        یک بازی اکشن در مرورگر.
+
+                    </p>
+
+                    <div class="project-status-text">
+                        ✓ پروژه تکمیل شده
+                    </div>
+
+                </div>
+
+
+                <!-- COMING SOON -->
+
+                <div class="card project">
+
+                    <span class="project-tag">
+                        به‌زودی
+                    </span>
+
+                    <h3>
+                        B&B AI
+                    </h3>
+
+                    <p>
+
+                        پروژه هوش مصنوعی B&B Studio
+                        برای ساخت یک تجربه اختصاصی
+                        و هوشمند.
+
+                    </p>
+
+                    <div class="project-status-text">
+                        🚀 بزودی
+                    </div>
+
+                </div>
+
+
+                <div class="card project">
+
+                    <span class="project-tag">
+                        به‌زودی
+                    </span>
+
+                    <h3>
+                        Gamer Kids
+                    </h3>
+
+                    <p>
+
+                        پروژه‌ای گیمینگ برای ساخت تجربه‌ها
+                        و بازی‌های تعاملی و خلاقانه.
+
+                    </p>
+
+                    <div class="project-status-text">
+                        🚀 بزودی
+                    </div>
+
+                </div>
+
+
+                <div class="card project">
+
+                    <span class="project-tag">
+                        به‌زودی
+                    </span>
+
+                    <h3>
+                        B&B News
+                    </h3>
+
+                    <p>
+
+                        بخش خبری و محتوایی آینده
+                        B&B Studio.
+
+                    </p>
+
+                    <div class="project-status-text">
+                        🚀 بزودی
+                    </div>
+
+                </div>
+
+
+                <div class="card project">
+
+                    <span class="project-tag">
+                        به‌زودی
+                    </span>
+
+                    <h3>
+                        B&B Project
+                    </h3>
+
+                    <p>
+
+                        فضایی برای معرفی و نمایش پروژه‌ها،
+                        ساخته‌ها و تجربه‌های B&B Studio.
+
+                    </p>
+
+                    <div class="project-status-text">
+                        🚀 بزودی
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- VISION -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="vision">
+
+                <div class="section-title">
+
+                    <span>
+                        OUR VISION
+                    </span>
+
+                </div>
+
+
+                <h2>
+
+                    آینده‌ای که از
+                    <span class="gradient">
+                        ایده‌ها
+                    </span>
+                    ساخته می‌شود.
+
+                </h2>
+
+
+                <p>
+
+                    B&B Studio قرار نیست فقط یک سایت
+                    یا یک نام باشد.
+                    هدف این است که به مرور زمان به
+                    مجموعه‌ای از پروژه‌ها، محصولات،
+                    تجربه‌ها و ابزارهای واقعی تبدیل شود؛
+                    چیزهایی که ساخته شده‌اند،
+                    آزمایش شده‌اند و قابل استفاده‌اند.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="cta">
+
+                <h2>
+
+                    یک ایده داری؟
+                    <span class="gradient">
+                        بسازیمش.
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    B&B Studio جایی برای تبدیل ایده‌های
+                    خلاقانه به پروژه‌های واقعی است.
+
+                </p>
+
+
+                <a
+                    class="btn btn-primary"
+                    href="contact.html"
+                >
+                    ارتباط با ما
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <span>
+            ©
+            <span id="year"></span>
+            B&B Studio
+        </span>
+
+        <span>
+            ایده‌ها را واقعی می‌کنیم.
+        </span>
+
+    </div>
+
+</footer>
+
+
+<script>
+
+    /* =========================================
+       THEME
+    ========================================= */
+
+    const body =
+        document.body;
+
+    const themeBtn =
+        document.getElementById("themeBtn");
+
+
+    const savedTheme =
+        localStorage.getItem("bb-theme");
+
+
+    if (savedTheme === "light") {
+
+        body.classList.add("light");
+
+        themeBtn.textContent = "🌙";
+    }
+
+
+    themeBtn.addEventListener(
+        "click",
+        () => {
+
+            body.classList.toggle("light");
+
+
+            const isLight =
+                body.classList.contains("light");
+
+
+            localStorage.setItem(
+                "bb-theme",
+                isLight
+                    ? "light"
+                    : "dark"
+            );
+
+
+            themeBtn.textContent =
+                isLight
+                    ? "🌙"
+                    : "☀️";
+
+        }
+    );
+
+
+    /* =========================================
+       YEAR
+    ========================================= */
+
+    document.getElementById("year")
+        .textContent =
+        new Date().getFullYear();
+
+</script>
+
+
+</body>
+</html>
