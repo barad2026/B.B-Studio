@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
@@ -57,6 +57,7 @@
 
     body {
       min-height: 100vh;
+
       font-family:
         Tahoma,
         Arial,
@@ -873,7 +874,11 @@
   <header>
     <nav class="nav">
 
-      <a class="brand" href="index.html">
+      <!-- لوگو = Home -->
+      <a
+        class="brand"
+        href="https://barad2026.github.io/B.B-Studio/"
+      >
         <img
           src="assets/logo.png"
           alt="B&B Studio"
@@ -882,20 +887,27 @@
         <span>B&B Studio</span>
       </a>
 
+
       <div class="links">
 
-        <a href="index.html">
+        <!-- Home -->
+        <a
+          href="https://barad2026.github.io/B.B-Studio/"
+        >
           خانه
         </a>
 
+        <!-- About -->
         <a href="about.html">
           درباره ما
         </a>
 
+        <!-- Projects -->
         <a href="projects.html">
           پروژه‌ها
         </a>
 
+        <!-- Contact -->
         <a
           href="contact.html"
           class="active"
@@ -904,6 +916,7 @@
         </a>
 
       </div>
+
 
       <button
         class="theme-btn"
@@ -982,11 +995,13 @@
           <div class="contact-item">
 
             <div class="contact-label">
+
               <span class="contact-icon">
                 B
               </span>
 
               بله
+
             </div>
 
             <a
@@ -1006,11 +1021,13 @@
           <div class="contact-item">
 
             <div class="contact-label">
+
               <span class="contact-icon">
                 ✈
               </span>
 
               تلگرام
+
             </div>
 
             <a
@@ -1030,11 +1047,13 @@
           <div class="contact-item">
 
             <div class="contact-label">
+
               <span class="contact-icon">
                 R
               </span>
 
               روبیکا
+
             </div>
 
             <span class="contact-value">
@@ -1080,11 +1099,13 @@
           <div class="contact-item">
 
             <div class="contact-label">
+
               <span class="contact-icon">
                 B
               </span>
 
               بله
+
             </div>
 
             <a
@@ -1104,11 +1125,13 @@
           <div class="contact-item">
 
             <div class="contact-label">
+
               <span class="contact-icon">
                 ✉
               </span>
 
               پیامک
+
             </div>
 
             <a
@@ -1151,6 +1174,7 @@
         </div>
 
       </div>
+
 
       <a
         class="bot-button"
@@ -1196,55 +1220,73 @@
   <footer>
 
     <p>
+
       © <span id="year"></span>
+
       <strong>B&B Studio</strong>
+
       — ایده‌ها را واقعی می‌کنیم.
+
     </p>
 
   </footer>
 
 
   <script>
+
     /* =========================
        THEME
-    ========================== */
+    ========================= */
 
     const themeBtn =
       document.getElementById("themeBtn");
 
+
     const savedTheme =
       localStorage.getItem("bb-theme");
 
+
     if (savedTheme === "light") {
+
       document.body.classList.add("light");
+
       themeBtn.textContent = "🌙";
+
     } else {
+
       themeBtn.textContent = "☀️";
+
     }
+
 
     themeBtn.addEventListener("click", () => {
 
       document.body.classList.toggle("light");
 
+
       const isLight =
         document.body.classList.contains("light");
+
 
       localStorage.setItem(
         "bb-theme",
         isLight ? "light" : "dark"
       );
 
+
       themeBtn.textContent =
         isLight ? "🌙" : "☀️";
+
     });
 
 
     /* =========================
        YEAR
-    ========================== */
+    ========================= */
 
     document.getElementById("year").textContent =
       new Date().getFullYear();
+
   </script>
 
 </body>
