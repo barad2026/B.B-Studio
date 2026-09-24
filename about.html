@@ -1,22 +1,15 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
 
+<html dir="ltr" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>درباره ما | B&B Studio</title>
-
-    <meta
-        name="description"
-        content="درباره B&B Studio؛ داستان، اهداف، ارزش‌ها و پروژه‌های یک استودیوی فناوری و خلاق."
-    >
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/logo.png">
-    <link rel="shortcut icon" href="assets/logo.png">
-
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title data-en="About Us | B&amp;B Studio" data-fa="درباره ما | B&amp;B Studio">درباره ما | B&amp;B Studio</title>
+<meta content="درباره B&amp;B Studio؛ داستان، اهداف، ارزش‌ها و پروژه‌های یک استودیوی فناوری و خلاق." data-en="درباره B&amp;B Studio؛ داستان، اهداف، ارزش‌ها و پروژه‌های یک استودیوی فناوری و خلاق." data-fa="درباره B&amp;B Studio؛ داستان، اهداف، ارزش‌ها و پروژه‌های یک استودیوی فناوری و خلاق." name="description"/>
+<!-- Favicon -->
+<link href="assets/logo.png" rel="icon" type="image/png"/>
+<link href="assets/logo.png" rel="shortcut icon"/>
+<style>
 
         /* =========================================
            VARIABLES
@@ -226,13 +219,7 @@
 
             object-fit: contain;
 
-            border-radius: 50%;
-
-            border: 1px solid var(--border);
-
-            box-shadow:
-                0 0 0 4px rgba(50,156,255,.07),
-                0 8px 25px rgba(0,0,0,.15);
+            border-radius: 11px;
         }
 
 
@@ -1373,229 +1360,80 @@
             }
         }
 
-    </style>
+    
+        .nav-actions { display:flex; align-items:center; gap:8px; }
+        .language-btn { min-width:52px; height:42px; padding:0 11px; border:1px solid var(--border); background:var(--card); color:var(--text); border-radius:12px; cursor:pointer; font:700 13px inherit; transition:.2s ease; }
+        .language-btn:hover { background:var(--card-hover); transform:translateY(-2px); }
+        .lang-text { display:inline; }
+        @media (max-width:520px) { .language-btn { min-width:48px; height:38px; } }
+</style>
 </head>
-
-
 <body>
-
-
 <!-- =========================================
      HEADER
 ========================================= -->
-
 <header>
-
-    <nav class="nav">
-
-
-        <!-- مستقیم به GitHub Pages -->
-        <a
-            class="brand"
-            href="https://barad2026.github.io/B.B-Studio/"
-        >
-
-            <img
-                src="assets/logo.png"
-                alt="B&B Studio"
-            >
-
-            <span>
-                B&B Studio
+<nav class="nav">
+<a class="brand" href="index.html">
+<img alt="B&amp;B Studio" src="assets/logo.png"/>
+<span>
+                B&amp;B Studio
             </span>
+</a>
+<div class="links">
+<a href="index.html"><span class="lang-text" data-en="Home" data-fa="خانه">خانه</span></a>
+<a class="active" href="about.html"><span class="lang-text" data-en="About" data-fa="درباره ما">درباره ما</span></a>
+<a href="projects.html"><span class="lang-text" data-en="Projects" data-fa="پروژه‌ها">پروژه‌ها</span></a>
+<a href="contact.html"><span class="lang-text" data-en="Contact" data-fa="ارتباط با ما">ارتباط با ما</span></a>
+</div>
 
-        </a>
-
-
-        <div class="links">
-
-            <!-- مستقیم به GitHub Pages -->
-            <a
-                href="https://barad2026.github.io/B.B-Studio/"
-            >
-                خانه
-            </a>
-
-            <a
-                href="about.html"
-                class="active"
-            >
-                درباره ما
-            </a>
-
-            <a href="projects.html">
-                پروژه‌ها
-            </a>
-
-            <a href="contact.html">
-                ارتباط با ما
-            </a>
-
-        </div>
-
-
-        <button
-            class="theme-btn"
-            id="themeBtn"
-            type="button"
-            aria-label="تغییر حالت"
-        >
+<div class="nav-actions"><button aria-label="Switch to Persian" class="language-btn" id="languageBtn" type="button">FA</button><button aria-label="تغییر حالت" class="theme-btn" id="themeBtn">
             ☀️
-        </button>
-
-
-    </nav>
-
+        </button></div></nav>
 </header>
-
-
 <!-- =========================================
      MAIN
 ========================================= -->
-
 <main>
+<!-- HERO -->
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<div class="badge">
 
-
-    <!-- HERO -->
-
-    <section class="hero">
-
-        <div class="container">
-
-            <div class="hero-content">
-
-
-                <div class="badge">
-
-                    B&B Studio —
-                    Technology & Creative Development
+                    B&amp;B Studio —
+                    Technology &amp; Creative Development
 
                 </div>
-
-
-                <h1>
-
-                    ما فقط
-                    <span class="gradient">
-                        ایده
-                    </span>
-                    نمی‌سازیم؛
-
-                    <br>
-
-                    آن‌ها را
-                    <span class="gradient">
-                        واقعی
-                    </span>
-                    می‌کنیم.
-
-                </h1>
-
-
-                <p>
-
-                    B&B Studio یک استودیوی فناوری و خلاق
-                    برای ساخت نرم‌افزار، بازی، وب‌سایت،
-                    ابزارهای دیجیتال و پروژه‌های خلاقانه است؛
-                    جایی که ایده‌ها از یک فکر ساده شروع می‌شوند
-                    و به پروژه‌های واقعی تبدیل می‌شوند.
-
-                </p>
-
-
-                <div class="buttons">
-
-                    <a
-                        class="btn btn-primary"
-                        href="#story"
-                    >
-                        داستان B&B Studio
-                    </a>
-
-
-                    <a
-                        class="btn btn-secondary"
-                        href="#projects"
-                    >
-                        پروژه‌های ما
-                    </a>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- WHAT IS B&B -->
-
-    <section>
-
-        <div class="container">
-
-
-            <div class="section-title">
-
-                <span>
+<h1><span class="lang-text" data-en="We Don’t Just" data-fa="ما فقط">ما فقط</span><span class="gradient"><span class="lang-text" data-en="Ideas" data-fa="ایده">ایده</span></span><span class="lang-text" data-en="We Don't Just Build;" data-fa="نمی‌سازیم؛">نمی‌سازیم؛</span><br/><span class="lang-text" data-en="We Make Them" data-fa="آن‌ها را">آن‌ها را</span><span class="gradient"><span class="lang-text" data-en="Real" data-fa="واقعی">واقعی</span></span><span class="lang-text" data-en="Real." data-fa="می‌کنیم.">می‌کنیم.</span></h1>
+<p><span class="lang-text" data-en="B&amp;B Studio is a technology and creative studio for building software, games, websites, digital tools and creative projects; where simple ideas turn into real projects." data-fa="B&amp;B Studio یک استودیوی فناوری و خلاق برای ساخت نرم‌افزار، بازی، وب‌سایت، ابزارهای دیجیتال و پروژه‌های خلاقانه است؛ جایی که ایده‌ها از یک فکر ساده شروع می‌شوند و به پروژه‌های واقعی تبدیل می‌شوند.">B&amp;B Studio یک استودیوی فناوری و خلاق برای ساخت نرم‌افزار، بازی، وب‌سایت، ابزارهای دیجیتال و پروژه‌های خلاقانه است؛ جایی که ایده‌ها از یک فکر ساده شروع می‌شوند و به پروژه‌های واقعی تبدیل می‌شوند.</span></p>
+<div class="buttons">
+<a class="btn btn-primary" href="#story"><span class="lang-text" data-en="The B&amp;B Studio Story" data-fa="داستان B&amp;B Studio">داستان B&amp;B Studio</span></a>
+<a class="btn btn-secondary" href="#projects"><span class="lang-text" data-en="Our Projects" data-fa="پروژه‌های ما">پروژه‌های ما</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- WHAT IS B&B -->
+<section>
+<div class="container">
+<div class="section-title">
+<span>
                     WHO WE ARE
                 </span>
-
-                <h2>
-                    B&B Studio چیست؟
-                </h2>
-
-                <p>
-                    یک فضای تکنولوژی و خلاق برای ساختن،
-                    آزمایش کردن و تبدیل ایده‌ها به پروژه‌های واقعی.
-                </p>
-
-            </div>
-
-
-            <div class="about-layout">
-
-
-                <div class="main-card">
-
-                    <div>
-
-                        <h3>
-                            ساختن مهم‌تر از فقط فکر کردن است.
-                        </h3>
-
-
-                        <p>
-
-                            در B&B Studio ایده‌ها قرار نیست
-                            فقط در ذهن یا روی کاغذ باقی بمانند.
-                            ما تلاش می‌کنیم آن‌ها را طراحی کنیم،
-                            توسعه دهیم، آزمایش کنیم و در نهایت
-                            به چیزی تبدیل کنیم که بتوان آن را دید
-                            و تجربه کرد.
-
-                        </p>
-
-
-                        <p>
-
-                            از وب و نرم‌افزار گرفته تا بازی،
-                            ابزارهای دیجیتال و پروژه‌های خلاقانه،
-                            هر پروژه فرصتی برای یادگیری و ساختن
-                            چیز جدید است.
-
-                        </p>
-
-                    </div>
-
-
-                    <div class="main-card-bottom">
-
-                        <div class="build-text">
-
-                            <strong>
+<h2><span class="lang-text" data-en="What is B&amp;B Studio؟" data-fa="B&amp;B Studio چیست؟">B&amp;B Studio چیست؟</span></h2>
+<p><span class="lang-text" data-en="A technology and creative space for building, experimenting and turning ideas into real projects." data-fa="یک فضای تکنولوژی و خلاق برای ساختن، آزمایش کردن و تبدیل ایده‌ها به پروژه‌های واقعی.">یک فضای تکنولوژی و خلاق برای ساختن، آزمایش کردن و تبدیل ایده‌ها به پروژه‌های واقعی.</span></p>
+</div>
+<div class="about-layout">
+<div class="main-card">
+<div>
+<h3><span class="lang-text" data-en="Building Is More Important Than Just Thinking." data-fa="ساختن مهم‌تر از فقط فکر کردن است.">ساختن مهم‌تر از فقط فکر کردن است.</span></h3>
+<p><span class="lang-text" data-en="At B&amp;B Studio, ideas are not meant to stay only in our minds or on paper. We try to design, develop and test them, and ultimately turn them into something people can see and experience." data-fa="در B&amp;B Studio ایده‌ها قرار نیست فقط در ذهن یا روی کاغذ باقی بمانند. ما تلاش می‌کنیم آن‌ها را طراحی کنیم، توسعه دهیم، آزمایش کنیم و در نهایت به چیزی تبدیل کنیم که بتوان آن را دید و تجربه کرد.">در B&amp;B Studio ایده‌ها قرار نیست فقط در ذهن یا روی کاغذ باقی بمانند. ما تلاش می‌کنیم آن‌ها را طراحی کنیم، توسعه دهیم، آزمایش کنیم و در نهایت به چیزی تبدیل کنیم که بتوان آن را دید و تجربه کرد.</span></p>
+<p><span class="lang-text" data-en="From web and software to games, digital tools and creative projects, every project is an opportunity to learn and build something new." data-fa="از وب و نرم‌افزار گرفته تا بازی، ابزارهای دیجیتال و پروژه‌های خلاقانه، هر پروژه فرصتی برای یادگیری و ساختن چیز جدید است.">از وب و نرم‌افزار گرفته تا بازی، ابزارهای دیجیتال و پروژه‌های خلاقانه، هر پروژه فرصتی برای یادگیری و ساختن چیز جدید است.</span></p>
+</div>
+<div class="main-card-bottom">
+<div class="build-text">
+<strong>
                                 Build.
                             </strong>
 
@@ -1604,612 +1442,219 @@
                             <span>
                                 Explore.
                             </span>
-
+</div>
+<div class="big-mark">
+                            B&amp;B
                         </div>
-
-
-                        <div class="big-mark">
-                            B&B
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="info-column">
-
-
-                    <div class="info-card">
-
-                        <div class="icon">
+</div>
+</div>
+<div class="info-column">
+<div class="info-card">
+<div class="icon">
                             01
                         </div>
-
-                        <h3>
-                            ساختن
-                        </h3>
-
-                        <p>
-                            ایده‌ها را به پروژه‌های قابل اجرا
-                            و قابل تجربه تبدیل می‌کنیم.
-                        </p>
-
-                    </div>
-
-
-                    <div class="info-card">
-
-                        <div class="icon">
+<h3><span class="lang-text" data-en="Build" data-fa="ساختن">ساختن</span></h3>
+<p><span class="lang-text" data-en="We turn ideas into projects that can be built and experienced." data-fa="ایده‌ها را به پروژه‌های قابل اجرا و قابل تجربه تبدیل می‌کنیم.">ایده‌ها را به پروژه‌های قابل اجرا و قابل تجربه تبدیل می‌کنیم.</span></p>
+</div>
+<div class="info-card">
+<div class="icon">
                             02
                         </div>
-
-                        <h3>
-                            تجربه کردن
-                        </h3>
-
-                        <p>
-                            پروژه‌های جدید را امتحان می‌کنیم،
-                            از نتیجه یاد می‌گیریم و بهتر می‌شویم.
-                        </p>
-
-                    </div>
-
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- STORY -->
-
-    <section id="story">
-
-        <div class="container">
-
-
-            <div class="story-card">
-
-
-                <div class="story-logo">
-
-                    <div class="logo-box">
-
-                        <img
-                            src="assets/logo.png"
-                            alt="B&B Studio"
-                        >
-
-                    </div>
-
-                </div>
-
-
-                <div class="story-content">
-
-                    <div class="section-title">
-
-                        <span>
+<h3><span class="lang-text" data-en="Experiment" data-fa="تجربه کردن">تجربه کردن</span></h3>
+<p><span class="lang-text" data-en="We try new projects, learn from the results and get better." data-fa="پروژه‌های جدید را امتحان می‌کنیم، از نتیجه یاد می‌گیریم و بهتر می‌شویم.">پروژه‌های جدید را امتحان می‌کنیم، از نتیجه یاد می‌گیریم و بهتر می‌شویم.</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- STORY -->
+<section id="story">
+<div class="container">
+<div class="story-card">
+<div class="story-logo">
+<div class="logo-box">
+<img alt="B&amp;B Studio" src="assets/logo.png"/>
+</div>
+</div>
+<div class="story-content">
+<div class="section-title">
+<span>
                             OUR STORY
                         </span>
-
-                    </div>
-
-
-                    <h2>
-                        داستان B&B Studio
-                    </h2>
-
-
-                    <p>
-
-                        B&B Studio از علاقه به ساختن،
-                        برنامه‌نویسی، طراحی و تجربه کردن
-                        پروژه‌های مختلف شکل گرفته است.
-
-                    </p>
-
-
-                    <p>
-
-                        هر پروژه یک فرصت است؛
-                        فرصتی برای یاد گرفتن یک تکنولوژی،
-                        حل کردن یک مشکل و ساختن چیزی
-                        که قبلاً وجود نداشته است.
-
-                    </p>
-
-
-                    <p>
-
-                        مسیر B&B Studio هنوز ادامه دارد.
-                        هدف این است که پروژه‌ها از ایده
-                        عبور کنند و به محصولات و تجربه‌های
-                        واقعی تبدیل شوند.
-
-                    </p>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- VALUES -->
-
-    <section>
-
-        <div class="container">
-
-
-            <div class="section-title">
-
-                <span>
+</div>
+<h2><span class="lang-text" data-en="The B&amp;B Studio Story" data-fa="داستان B&amp;B Studio">داستان B&amp;B Studio</span></h2>
+<p><span class="lang-text" data-en="B&amp;B Studio grew from a passion for building, programming, design and experimenting with different projects." data-fa="B&amp;B Studio از علاقه به ساختن، برنامه‌نویسی، طراحی و تجربه کردن پروژه‌های مختلف شکل گرفته است.">B&amp;B Studio از علاقه به ساختن، برنامه‌نویسی، طراحی و تجربه کردن پروژه‌های مختلف شکل گرفته است.</span></p>
+<p><span class="lang-text" data-en="Every project is an opportunity; a chance to learn a technology, solve a problem and build something that did not exist before." data-fa="هر پروژه یک فرصت است؛ فرصتی برای یاد گرفتن یک تکنولوژی، حل کردن یک مشکل و ساختن چیزی که قبلاً وجود نداشته است.">هر پروژه یک فرصت است؛ فرصتی برای یاد گرفتن یک تکنولوژی، حل کردن یک مشکل و ساختن چیزی که قبلاً وجود نداشته است.</span></p>
+<p><span class="lang-text" data-en="The B&amp;B Studio journey is still continuing. The goal is for projects to move beyond ideas and become real products and experiences." data-fa="مسیر B&amp;B Studio هنوز ادامه دارد. هدف این است که پروژه‌ها از ایده عبور کنند و به محصولات و تجربه‌های واقعی تبدیل شوند.">مسیر B&amp;B Studio هنوز ادامه دارد. هدف این است که پروژه‌ها از ایده عبور کنند و به محصولات و تجربه‌های واقعی تبدیل شوند.</span></p>
+</div>
+</div>
+</div>
+</section>
+<!-- VALUES -->
+<section>
+<div class="container">
+<div class="section-title">
+<span>
                     WHAT WE CARE ABOUT
                 </span>
-
-                <h2>
-                    چیزهایی که برای ما مهم‌اند
-                </h2>
-
-                <p>
-                    سه اصل ساده که مسیر پروژه‌های
-                    B&B Studio را شکل می‌دهند.
-                </p>
-
-            </div>
-
-
-            <div class="grid">
-
-
-                <div class="card">
-
-                    <div class="value-number">
+<h2><span class="lang-text" data-en="What Matters to Us" data-fa="چیزهایی که برای ما مهم‌اند">چیزهایی که برای ما مهم‌اند</span></h2>
+<p><span class="lang-text" data-en="Three simple principles that shape the path of B&amp;B Studio projects." data-fa="سه اصل ساده که مسیر پروژه‌های B&amp;B Studio را شکل می‌دهند.">سه اصل ساده که مسیر پروژه‌های B&amp;B Studio را شکل می‌دهند.</span></p>
+</div>
+<div class="grid">
+<div class="card">
+<div class="value-number">
                         01 / IDEA
                     </div>
-
-                    <h3>
-                        ایده
-                    </h3>
-
-                    <p>
-
-                        هر پروژه از یک فکر شروع می‌شود.
-                        ما ایده را بررسی می‌کنیم و دنبال
-                        راهی برای تبدیل آن به چیزی واقعی هستیم.
-
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <div class="value-number">
+<h3><span class="lang-text" data-en="Ideas" data-fa="ایده">ایده</span></h3>
+<p><span class="lang-text" data-en="Every project starts with a thought. We explore the idea and look for a way to turn it into something real." data-fa="هر پروژه از یک فکر شروع می‌شود. ما ایده را بررسی می‌کنیم و دنبال راهی برای تبدیل آن به چیزی واقعی هستیم.">هر پروژه از یک فکر شروع می‌شود. ما ایده را بررسی می‌کنیم و دنبال راهی برای تبدیل آن به چیزی واقعی هستیم.</span></p>
+</div>
+<div class="card">
+<div class="value-number">
                         02 / BUILD
                     </div>
-
-                    <h3>
-                        ساخت
-                    </h3>
-
-                    <p>
-
-                        یادگیری وقتی ارزش بیشتری دارد
-                        که بتوانیم چیزی واقعی بسازیم،
-                        اجرا کنیم و نتیجه را ببینیم.
-
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <div class="value-number">
+<h3><span class="lang-text" data-en="Build" data-fa="ساخت">ساخت</span></h3>
+<p><span class="lang-text" data-en="Learning becomes more valuable when we can build something real, run it and see the result." data-fa="یادگیری وقتی ارزش بیشتری دارد که بتوانیم چیزی واقعی بسازیم، اجرا کنیم و نتیجه را ببینیم.">یادگیری وقتی ارزش بیشتری دارد که بتوانیم چیزی واقعی بسازیم، اجرا کنیم و نتیجه را ببینیم.</span></p>
+</div>
+<div class="card">
+<div class="value-number">
                         03 / FUTURE
                     </div>
-
-                    <h3>
-                        آینده
-                    </h3>
-
-                    <p>
-
-                        هر پروژه می‌تواند شروع پروژه‌ای
-                        بزرگ‌تر باشد. مسیر ما با یادگیری،
-                        آزمایش و ساختن ادامه پیدا می‌کند.
-
-                    </p>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROJECTS -->
-
-    <section id="projects">
-
-        <div class="container">
-
-
-            <div class="section-title">
-
-                <span>
+<h3><span class="lang-text" data-en="Future" data-fa="آینده">آینده</span></h3>
+<p><span class="lang-text" data-en="Every project can be the beginning of something bigger. Our path continues through learning, experimenting and building." data-fa="هر پروژه می‌تواند شروع پروژه‌ای بزرگ‌تر باشد. مسیر ما با یادگیری، آزمایش و ساختن ادامه پیدا می‌کند.">هر پروژه می‌تواند شروع پروژه‌ای بزرگ‌تر باشد. مسیر ما با یادگیری، آزمایش و ساختن ادامه پیدا می‌کند.</span></p>
+</div>
+</div>
+</div>
+</section>
+<!-- PROJECTS -->
+<section id="projects">
+<div class="container">
+<div class="section-title">
+<span>
                     PROJECTS
                 </span>
-
-                <h2>
-                    پروژه‌های B&B Studio
-                </h2>
-
-                <p>
-
-                    پروژه‌هایی که ساخته شده‌اند و ایده‌هایی
-                    که در مسیر تبدیل شدن به محصولات واقعی هستند.
-
-                </p>
-
-            </div>
-
-
-            <div class="grid">
-
-
-                <!-- COMPLETED -->
-
-                <div class="card project completed">
-
-                    <span class="project-tag">
-                        تکمیل شده
-                    </span>
-
-                    <h3>
+<h2><span class="lang-text" data-en="B&amp;B Studio Projects" data-fa="پروژه‌های B&amp;B Studio">پروژه‌های B&amp;B Studio</span></h2>
+<p><span class="lang-text" data-en="Projects that have been built and ideas that are on their way to becoming real products." data-fa="پروژه‌هایی که ساخته شده‌اند و ایده‌هایی که در مسیر تبدیل شدن به محصولات واقعی هستند.">پروژه‌هایی که ساخته شده‌اند و ایده‌هایی که در مسیر تبدیل شدن به محصولات واقعی هستند.</span></p>
+</div>
+<div class="grid">
+<!-- COMPLETED -->
+<div class="card project completed">
+<span class="project-tag"><span class="lang-text" data-en="Completed" data-fa="تکمیل شده">تکمیل شده</span></span>
+<h3>
                         Ninja TablePro
                     </h3>
-
-                    <p>
-
-                        یک افزونه WordPress برای کار با
-                        جدول‌ها و نمایش داده‌ها؛
-                        یکی از پروژه‌های تکمیل‌شده
-                        B&B Studio.
-
-                    </p>
-
-                    <div class="project-status-text">
-                        ✓ پروژه تکمیل شده
-                    </div>
-
-                </div>
-
-
-                <div class="card project completed">
-
-                    <span class="project-tag">
-                        تکمیل شده
-                    </span>
-
-                    <h3>
-                        بازی عملیاتی HTML
+<p><span class="lang-text" data-en="A WordPress plugin for working with tables and displaying data; one of B&amp;B Studio’s completed projects." data-fa="یک افزونه WordPress برای کار با جدول‌ها و نمایش داده‌ها؛ یکی از پروژه‌های تکمیل‌شده B&amp;B Studio.">یک افزونه WordPress برای کار با جدول‌ها و نمایش داده‌ها؛ یکی از پروژه‌های تکمیل‌شده B&amp;B Studio.</span></p>
+<div class="project-status-text"><span class="lang-text" data-en="✓ Project Completed" data-fa="✓ پروژه تکمیل شده">✓ پروژه تکمیل شده</span></div>
+</div>
+<div class="card project completed">
+<span class="project-tag"><span class="lang-text" data-en="Completed" data-fa="تکمیل شده">تکمیل شده</span></span>
+<h3><span class="lang-text" data-en="HTML Operation Game" data-fa="بازی عملیاتی HTML">بازی عملیاتی HTML</span></h3>
+<p><span class="lang-text" data-en="A graphical operation game built with HTML; a gaming project for experiencing an action game in the browser." data-fa="یک بازی عملیاتی گرافیکی ساخته‌شده با HTML؛ پروژه‌ای گیمینگ برای تجربه یک بازی اکشن در مرورگر.">یک بازی عملیاتی گرافیکی ساخته‌شده با HTML؛ پروژه‌ای گیمینگ برای تجربه یک بازی اکشن در مرورگر.</span></p>
+<div class="project-status-text"><span class="lang-text" data-en="✓ Project Completed" data-fa="✓ پروژه تکمیل شده">✓ پروژه تکمیل شده</span></div>
+</div>
+<!-- COMING SOON -->
+<div class="card project">
+<span class="project-tag"><span class="lang-text" data-en="Coming Soon" data-fa="به‌زودی">به‌زودی</span></span>
+<h3>
+                        B&amp;B AI
                     </h3>
-
-                    <p>
-
-                        یک بازی عملیاتی گرافیکی ساخته‌شده
-                        با HTML؛ پروژه‌ای گیمینگ برای تجربه
-                        یک بازی اکشن در مرورگر.
-
-                    </p>
-
-                    <div class="project-status-text">
-                        ✓ پروژه تکمیل شده
-                    </div>
-
-                </div>
-
-
-                <!-- COMING SOON -->
-
-                <div class="card project">
-
-                    <span class="project-tag">
-                        به‌زودی
-                    </span>
-
-                    <h3>
-                        B&B AI
-                    </h3>
-
-                    <p>
-
-                        پروژه هوش مصنوعی B&B Studio
-                        برای ساخت یک تجربه اختصاصی
-                        و هوشمند.
-
-                    </p>
-
-                    <div class="project-status-text">
-                        🚀 بزودی
-                    </div>
-
-                </div>
-
-
-                <div class="card project">
-
-                    <span class="project-tag">
-                        به‌زودی
-                    </span>
-
-                    <h3>
+<p><span class="lang-text" data-en="B&amp;B Studio's AI project for building a dedicated and intelligent experience." data-fa="پروژه هوش مصنوعی B&amp;B Studio برای ساخت یک تجربه اختصاصی و هوشمند.">پروژه هوش مصنوعی B&amp;B Studio برای ساخت یک تجربه اختصاصی و هوشمند.</span></p>
+<div class="project-status-text"><span class="lang-text" data-en="🚀 Coming Soon" data-fa="🚀 بزودی">🚀 بزودی</span></div>
+</div>
+<div class="card project">
+<span class="project-tag"><span class="lang-text" data-en="Coming Soon" data-fa="به‌زودی">به‌زودی</span></span>
+<h3>
                         Gamer Kids
                     </h3>
-
-                    <p>
-
-                        پروژه‌ای گیمینگ برای ساخت تجربه‌ها
-                        و بازی‌های تعاملی و خلاقانه.
-
-                    </p>
-
-                    <div class="project-status-text">
-                        🚀 بزودی
-                    </div>
-
-                </div>
-
-
-                <div class="card project">
-
-                    <span class="project-tag">
-                        به‌زودی
-                    </span>
-
-                    <h3>
-                        B&B News
+<p><span class="lang-text" data-en="A gaming project for creating interactive and creative experiences and games." data-fa="پروژه‌ای گیمینگ برای ساخت تجربه‌ها و بازی‌های تعاملی و خلاقانه.">پروژه‌ای گیمینگ برای ساخت تجربه‌ها و بازی‌های تعاملی و خلاقانه.</span></p>
+<div class="project-status-text"><span class="lang-text" data-en="🚀 Coming Soon" data-fa="🚀 بزودی">🚀 بزودی</span></div>
+</div>
+<div class="card project">
+<span class="project-tag"><span class="lang-text" data-en="Coming Soon" data-fa="به‌زودی">به‌زودی</span></span>
+<h3>
+                        B&amp;B News
                     </h3>
-
-                    <p>
-
-                        بخش خبری و محتوایی آینده
-                        B&B Studio.
-
-                    </p>
-
-                    <div class="project-status-text">
-                        🚀 بزودی
-                    </div>
-
-                </div>
-
-
-                <div class="card project">
-
-                    <span class="project-tag">
-                        به‌زودی
-                    </span>
-
-                    <h3>
-                        B&B Project
+<p><span class="lang-text" data-en="The future news and content section of B&amp;B Studio." data-fa="بخش خبری و محتوایی آینده B&amp;B Studio.">بخش خبری و محتوایی آینده B&amp;B Studio.</span></p>
+<div class="project-status-text"><span class="lang-text" data-en="🚀 Coming Soon" data-fa="🚀 بزودی">🚀 بزودی</span></div>
+</div>
+<div class="card project">
+<span class="project-tag"><span class="lang-text" data-en="Coming Soon" data-fa="به‌زودی">به‌زودی</span></span>
+<h3>
+                        B&amp;B Project
                     </h3>
-
-                    <p>
-
-                        فضایی برای معرفی و نمایش پروژه‌ها،
-                        ساخته‌ها و تجربه‌های B&B Studio.
-
-                    </p>
-
-                    <div class="project-status-text">
-                        🚀 بزودی
-                    </div>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- VISION -->
-
-    <section>
-
-        <div class="container">
-
-            <div class="vision">
-
-                <div class="section-title">
-
-                    <span>
+<p><span class="lang-text" data-en="A space for introducing and showcasing B&amp;B Studio projects, creations and experiences." data-fa="فضایی برای معرفی و نمایش پروژه‌ها، ساخته‌ها و تجربه‌های B&amp;B Studio.">فضایی برای معرفی و نمایش پروژه‌ها، ساخته‌ها و تجربه‌های B&amp;B Studio.</span></p>
+<div class="project-status-text"><span class="lang-text" data-en="🚀 Coming Soon" data-fa="🚀 بزودی">🚀 بزودی</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- VISION -->
+<section>
+<div class="container">
+<div class="vision">
+<div class="section-title">
+<span>
                         OUR VISION
                     </span>
-
-                </div>
-
-
-                <h2>
-
-                    آینده‌ای که از
-                    <span class="gradient">
-                        ایده‌ها
-                    </span>
-                    ساخته می‌شود.
-
-                </h2>
-
-
-                <p>
-
-                    B&B Studio قرار نیست فقط یک سایت
-                    یا یک نام باشد.
-                    هدف این است که به مرور زمان به
-                    مجموعه‌ای از پروژه‌ها، محصولات،
-                    تجربه‌ها و ابزارهای واقعی تبدیل شود؛
-                    چیزهایی که ساخته شده‌اند،
-                    آزمایش شده‌اند و قابل استفاده‌اند.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CTA -->
-
-    <section>
-
-        <div class="container">
-
-            <div class="cta">
-
-                <h2>
-
-                    یک ایده داری؟
-                    <span class="gradient">
-                        بسازیمش.
-                    </span>
-
-                </h2>
-
-
-                <p>
-
-                    B&B Studio جایی برای تبدیل ایده‌های
-                    خلاقانه به پروژه‌های واقعی است.
-
-                </p>
-
-
-                <a
-                    class="btn btn-primary"
-                    href="contact.html"
-                >
-                    ارتباط با ما
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
+</div>
+<h2><span class="lang-text" data-en="A Future Built From" data-fa="آینده‌ای که از">آینده‌ای که از</span><span class="gradient"><span class="lang-text" data-en="Ideas" data-fa="ایده‌ها">ایده‌ها</span></span><span class="lang-text" data-en="Is Built." data-fa="ساخته می‌شود.">ساخته می‌شود.</span></h2>
+<p><span class="lang-text" data-en="B&amp;B Studio is not meant to be just a website or a name. The goal is to gradually become a collection of real projects, products, experiences and tools—things that have been built, tested and made usable." data-fa="B&amp;B Studio قرار نیست فقط یک سایت یا یک نام باشد. هدف این است که به مرور زمان به مجموعه‌ای از پروژه‌ها، محصولات، تجربه‌ها و ابزارهای واقعی تبدیل شود؛ چیزهایی که ساخته شده‌اند، آزمایش شده‌اند و قابل استفاده‌اند.">B&amp;B Studio قرار نیست فقط یک سایت یا یک نام باشد. هدف این است که به مرور زمان به مجموعه‌ای از پروژه‌ها، محصولات، تجربه‌ها و ابزارهای واقعی تبدیل شود؛ چیزهایی که ساخته شده‌اند، آزمایش شده‌اند و قابل استفاده‌اند.</span></p>
+</div>
+</div>
+</section>
+<!-- CTA -->
+<section>
+<div class="container">
+<div class="cta">
+<h2><span class="lang-text" data-en="Have an Idea?" data-fa="یک ایده داری؟">یک ایده داری؟</span><span class="gradient"><span class="lang-text" data-en="Let's Build It." data-fa="بسازیمش.">بسازیمش.</span></span>
+</h2>
+<p><span class="lang-text" data-en="B&amp;B Studio is a place for turning creative ideas into real projects." data-fa="B&amp;B Studio جایی برای تبدیل ایده‌های خلاقانه به پروژه‌های واقعی است.">B&amp;B Studio جایی برای تبدیل ایده‌های خلاقانه به پروژه‌های واقعی است.</span></p>
+<a class="btn btn-primary" href="contact.html"><span class="lang-text" data-en="Contact" data-fa="ارتباط با ما">ارتباط با ما</span></a>
+</div>
+</div>
+</section>
 </main>
-
-
 <!-- =========================================
      FOOTER
 ========================================= -->
-
 <footer>
-
-    <div class="container footer-inner">
-
-        <span>
+<div class="container footer-inner">
+<span>
             ©
             <span id="year"></span>
-            B&B Studio
+            B&amp;B Studio
         </span>
-
-        <span>
-            ایده‌ها را واقعی می‌کنیم.
-        </span>
-
-    </div>
-
+<span><span class="lang-text" data-en="We Make Ideas Real." data-fa="ایده‌ها را واقعی می‌کنیم.">ایده‌ها را واقعی می‌کنیم.</span></span>
+</div>
 </footer>
 
-
 <script>
+(function(){
+  const root=document.documentElement;
+  const langBtn=document.getElementById("languageBtn");
+  const nodes=[...document.querySelectorAll(".lang-text")];
+  const title=document.querySelector("title");
+  const meta=document.querySelector('meta[name="description"]');
+  const titleFa=title?.dataset.fa || title?.textContent || "";
+  const titleEn=title?.dataset.en || titleFa;
+  const metaFa=meta?.dataset.fa || meta?.content || "";
+  const metaEn=meta?.dataset.en || metaFa;
+  function setLanguage(lang){
+    lang=lang==="fa"?"fa":"en";
+    root.lang=lang; root.dir=lang==="fa"?"rtl":"ltr";
+    nodes.forEach(n=>n.textContent=lang==="fa"?n.dataset.fa:n.dataset.en);
+    if(title) title.textContent=lang==="fa"?titleFa:titleEn;
+    if(meta) meta.content=lang==="fa"?metaFa:metaEn;
+    if(langBtn){ langBtn.textContent=lang==="en"?"FA":"EN"; langBtn.setAttribute("aria-label",lang==="en"?"Switch to Persian":"تغییر به انگلیسی"); }
+    localStorage.setItem("bb-language",lang);
+  }
+  langBtn?.addEventListener("click",()=>setLanguage(root.lang==="en"?"fa":"en"));
+  setLanguage(localStorage.getItem("bb-language")||"en");
+})();
 
-    /* =========================================
-       THEME
-    ========================================= */
-
-    const body =
-        document.body;
-
-    const themeBtn =
-        document.getElementById("themeBtn");
-
-
-    const savedTheme =
-        localStorage.getItem("bb-theme");
-
-
-    if (savedTheme === "light") {
-
-        body.classList.add("light");
-
-        themeBtn.textContent = "🌙";
-    } else {
-
-        themeBtn.textContent = "☀️";
-    }
-
-
-    themeBtn.addEventListener(
-        "click",
-        () => {
-
-            body.classList.toggle("light");
-
-
-            const isLight =
-                body.classList.contains("light");
-
-
-            localStorage.setItem(
-                "bb-theme",
-                isLight
-                    ? "light"
-                    : "dark"
-            );
-
-
-            themeBtn.textContent =
-                isLight
-                    ? "🌙"
-                    : "☀️";
-
-        }
-    );
-
-
-    /* =========================================
-       YEAR
-    ========================================= */
-
-    document.getElementById("year")
-        .textContent =
-        new Date().getFullYear();
-
-</script>
-
-
-</body>
+const themeBtn=document.getElementById("themeBtn");
+const savedTheme=localStorage.getItem("bb-theme");
+if(savedTheme==="light"){document.body.classList.add("light");themeBtn.textContent="🌙";}else{themeBtn.textContent="☀️";}
+themeBtn.addEventListener("click",()=>{document.body.classList.toggle("light");const isLight=document.body.classList.contains("light");localStorage.setItem("bb-theme",isLight?"light":"dark");themeBtn.textContent=isLight?"🌙":"☀️";});
+const year=document.getElementById("year"); if(year) year.textContent=new Date().getFullYear();
+</script></body>
 </html>
