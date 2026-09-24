@@ -1,33 +1,34 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
 
+<html dir="ltr" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>پروژه‌ها | B&B Studio</title>
-
-    <meta
-        name="description"
-        content="پروژه‌های B&B Studio؛ از افزونه‌های وردپرس و بازی‌های تحت وب تا پروژه‌های آینده."
-    >
-
-    <link rel="icon" type="image/png" href="assets/logo.png">
-
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title data-en="Projects | B&amp;B Studio" data-fa="پروژه‌ها | B&amp;B Studio">پروژه‌ها | B&amp;B Studio</title>
+<meta content="پروژه‌های B&amp;B Studio؛ از افزونه‌های وردپرس و بازی‌های تحت وب تا پروژه‌های آینده." data-en="پروژه‌های B&amp;B Studio؛ از افزونه‌های وردپرس و بازی‌های تحت وب تا پروژه‌های آینده." data-fa="پروژه‌های B&amp;B Studio؛ از افزونه‌های وردپرس و بازی‌های تحت وب تا پروژه‌های آینده." name="description"/>
+<link href="assets/logo.png" rel="icon" type="image/png"/>
+<style>
         :root {
             --bg: #070b12;
             --bg-soft: #0d1420;
+
             --card: rgba(255,255,255,.045);
             --card-hover: rgba(255,255,255,.075);
+
             --header: rgba(7,11,18,.78);
+
             --text: #ffffff;
             --muted: #aab4c3;
+
             --border: rgba(255,255,255,.09);
+
             --accent: #329cff;
             --accent-2: #78c5ff;
+
             --success: #71e3a3;
+
             --shadow: 0 25px 80px rgba(0,0,0,.38);
+
             --radius: 24px;
             --max-width: 1180px;
         }
@@ -35,14 +36,20 @@
         body.light {
             --bg: #f5f9ff;
             --bg-soft: #eaf2fc;
+
             --card: rgba(255,255,255,.75);
             --card-hover: rgba(255,255,255,.95);
+
             --header: rgba(245,249,255,.82);
+
             --text: #101722;
             --muted: #5f6d7d;
+
             --border: rgba(10,40,80,.10);
+
             --accent: #147fe8;
             --accent-2: #55aef5;
+
             --shadow: 0 25px 70px rgba(30,80,130,.12);
         }
 
@@ -98,8 +105,10 @@
 
         header {
             position: fixed;
+
             top: 18px;
             left: 50%;
+
             transform: translateX(-50%);
 
             width: min(calc(100% - 30px), 1200px);
@@ -107,6 +116,7 @@
             z-index: 1000;
 
             background: var(--header);
+
             border: 1px solid var(--border);
 
             backdrop-filter: blur(20px);
@@ -122,9 +132,11 @@
 
             display: flex;
             align-items: center;
+
             justify-content: space-between;
 
             padding: 10px 18px;
+
             gap: 20px;
         }
 
@@ -145,6 +157,7 @@
             height: 42px;
 
             object-fit: cover;
+
             border-radius: 50%;
 
             border: 1px solid var(--border);
@@ -171,6 +184,7 @@
         .links {
             display: flex;
             align-items: center;
+
             gap: 7px;
         }
 
@@ -181,7 +195,8 @@
 
             border-radius: 12px;
 
-            transition: .25s ease;
+            transition:
+                .25s ease;
         }
 
         .links a:hover {
@@ -208,9 +223,11 @@
             justify-content: center;
 
             border: 1px solid var(--border);
+
             border-radius: 12px;
 
             background: var(--card);
+
             color: var(--text);
 
             cursor: pointer;
@@ -222,6 +239,7 @@
 
         .theme-btn:hover {
             background: var(--card-hover);
+
             transform: translateY(-2px);
         }
 
@@ -256,7 +274,6 @@
         .badge {
             display: inline-flex;
             align-items: center;
-
             gap: 8px;
 
             padding: 8px 13px;
@@ -362,6 +379,7 @@
 
         .section-heading p {
             color: var(--muted);
+
             font-size: 14px;
         }
 
@@ -384,6 +402,7 @@
 
         .project-card {
             position: relative;
+
             overflow: hidden;
 
             padding: 28px;
@@ -489,6 +508,7 @@
             border-radius: 999px;
 
             font-size: 12px;
+
             font-weight: 700;
 
             white-space: nowrap;
@@ -516,6 +536,7 @@
 
         .project-card h3 {
             font-size: 24px;
+
             margin-bottom: 13px;
         }
 
@@ -523,6 +544,7 @@
             color: var(--muted);
 
             line-height: 1.95;
+
             font-size: 14px;
 
             flex: 1;
@@ -546,11 +568,9 @@
 
             border-radius: 9px;
 
-            background:
-                rgba(255,255,255,.035);
+            background: rgba(255,255,255,.035);
 
-            border:
-                1px solid var(--border);
+            border: 1px solid var(--border);
         }
 
         /* =========================
@@ -611,6 +631,7 @@
 
         .featured h3 {
             font-size: 30px;
+
             margin-bottom: 15px;
         }
 
@@ -627,8 +648,7 @@
 
             border-radius: 20px;
 
-            border:
-                1px solid var(--border);
+            border: 1px solid var(--border);
 
             background:
                 radial-gradient(
@@ -639,7 +659,6 @@
                 rgba(255,255,255,.025);
 
             display: flex;
-
             align-items: center;
             justify-content: center;
 
@@ -687,6 +706,7 @@
 
         .cta h2 {
             font-size: 31px;
+
             margin-bottom: 13px;
         }
 
@@ -697,13 +717,11 @@
 
             max-width: 650px;
 
-            margin:
-                auto auto 24px;
+            margin: auto auto 24px;
         }
 
         .cta-btn {
             display: inline-flex;
-
             align-items: center;
             justify-content: center;
 
@@ -835,534 +853,256 @@
                 padding: 35px 20px;
             }
         }
-    </style>
+    
+        .nav-actions { display:flex; align-items:center; gap:8px; }
+        .language-btn { min-width:52px; height:42px; padding:0 11px; border:1px solid var(--border); background:var(--card); color:var(--text); border-radius:12px; cursor:pointer; font:700 13px inherit; transition:.2s ease; }
+        .language-btn:hover { background:var(--card-hover); transform:translateY(-2px); }
+        .lang-text { display:inline; }
+        @media (max-width:520px) { .language-btn { min-width:48px; height:38px; } }
+</style>
 </head>
-
 <body>
-
-    <!-- =========================
+<!-- =========================
          HEADER
     ========================= -->
+<header>
+<nav class="nav">
+<a class="brand" href="index.html">
+<img alt="B&amp;B Studio" src="assets/logo.png"/>
+<span>B&amp;B Studio</span>
+</a>
+<div class="links">
+<a href="index.html"><span class="lang-text" data-en="Home" data-fa="خانه">خانه</span></a>
+<a href="about.html"><span class="lang-text" data-en="About" data-fa="درباره ما">درباره ما</span></a>
+<a class="active" href="projects.html"><span class="lang-text" data-en="Projects" data-fa="پروژه‌ها">پروژه‌ها</span></a>
+<a href="contact.html"><span class="lang-text" data-en="Contact" data-fa="ارتباط با ما">ارتباط با ما</span></a>
+</div>
 
-    <header>
-
-        <nav class="nav">
-
-            <!-- مستقیم به GitHub Pages -->
-            <a
-                class="brand"
-                href="https://barad2026.github.io/B.B-Studio/"
-            >
-                <img
-                    src="assets/logo.png"
-                    alt="B&B Studio"
-                >
-
-                <span>B&B Studio</span>
-            </a>
-
-            <div class="links">
-
-                <!-- مستقیم به GitHub Pages -->
-                <a
-                    href="https://barad2026.github.io/B.B-Studio/"
-                >
-                    خانه
-                </a>
-
-                <a href="about.html">
-                    درباره ما
-                </a>
-
-                <a
-                    href="projects.html"
-                    class="active"
-                >
-                    پروژه‌ها
-                </a>
-
-                <a href="contact.html">
-                    ارتباط با ما
-                </a>
-
-            </div>
-
-            <button
-                class="theme-btn"
-                id="themeBtn"
-                type="button"
-                aria-label="تغییر حالت نمایش"
-            >
+<div class="nav-actions"><button aria-label="Switch to Persian" class="language-btn" id="languageBtn" type="button">FA</button><button aria-label="تغییر حالت نمایش" class="theme-btn" id="themeBtn" type="button">
                 ☀️
-            </button>
-
-        </nav>
-
-    </header>
-
-
-    <!-- =========================
+            </button></div></nav>
+</header>
+<!-- =========================
          MAIN
     ========================= -->
-
-    <main>
-
-        <!-- HERO -->
-
-        <section class="hero">
-
-            <div class="badge">
-                B&B Studio Projects
+<main>
+<!-- HERO -->
+<section class="hero">
+<div class="badge">
+                B&amp;B Studio Projects
             </div>
-
-            <h1>
-                پروژه‌های
-                <span>B&B Studio</span>
-            </h1>
-
-            <p>
-                اینجا جاییه که ایده‌ها از روی کاغذ خارج می‌شن
-                و به پروژه‌های واقعی تبدیل می‌شن.
-                بعضی پروژه‌ها تکمیل شده‌اند و بعضی دیگر
-                در مسیر ساخت قرار دارند.
-            </p>
-
-        </section>
-
-
-        <!-- COMPLETED -->
-
-        <section class="project-section">
-
-            <div class="section-heading">
-
-                <div>
-
-                    <h2>
-                        پروژه‌های تکمیل‌شده
-                    </h2>
-
-                </div>
-
-                <p>
-                    پروژه‌هایی که ساخت آن‌ها به پایان رسیده است.
-                </p>
-
-            </div>
-
-
-            <div class="projects-grid">
-
-                <!-- Ninja TablePro -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-
-                        <div class="project-icon">
+<h1><span class="lang-text" data-en="Projects" data-fa="پروژه‌های">پروژه‌های</span><span>B&amp;B Studio</span>
+</h1>
+<p><span class="lang-text" data-en="This is where ideas leave the page and become real projects. Some projects are completed, while others are still being built." data-fa="اینجا جاییه که ایده‌ها از روی کاغذ خارج می‌شن و به پروژه‌های واقعی تبدیل می‌شن. بعضی پروژه‌ها تکمیل شده‌اند و بعضی دیگر در مسیر ساخت قرار دارند.">اینجا جاییه که ایده‌ها از روی کاغذ خارج می‌شن و به پروژه‌های واقعی تبدیل می‌شن. بعضی پروژه‌ها تکمیل شده‌اند و بعضی دیگر در مسیر ساخت قرار دارند.</span></p>
+</section>
+<!-- COMPLETED -->
+<section class="project-section">
+<div class="section-heading">
+<div>
+<h2><span class="lang-text" data-en="Completed Projects" data-fa="پروژه‌های تکمیل‌شده">پروژه‌های تکمیل‌شده</span></h2>
+</div>
+<p><span class="lang-text" data-en="Projects whose development has been completed." data-fa="پروژه‌هایی که ساخت آن‌ها به پایان رسیده است.">پروژه‌هایی که ساخت آن‌ها به پایان رسیده است.</span></p>
+</div>
+<div class="projects-grid">
+<!-- Ninja TablePro -->
+<article class="project-card">
+<div class="project-top">
+<div class="project-icon">
                             🧩
                         </div>
-
-                        <div class="status done">
-                            ✓ تکمیل‌شده
-                        </div>
-
-                    </div>
-
-                    <h3>
+<div class="status done"><span class="lang-text" data-en="✓ Completed" data-fa="✓ تکمیل‌شده">✓ تکمیل‌شده</span></div>
+</div>
+<h3>
                         Ninja TablePro
                     </h3>
-
-                    <p>
-                        یک افزونه وردپرس برای ساخت و مدیریت
-                        جدول‌های حرفه‌ای و کاربردی.
-                    </p>
-
-                    <div class="project-meta">
-
-                        <span>
+<p><span class="lang-text" data-en="A WordPress plugin for creating and managing professional and practical tables." data-fa="یک افزونه وردپرس برای ساخت و مدیریت جدول‌های حرفه‌ای و کاربردی.">یک افزونه وردپرس برای ساخت و مدیریت جدول‌های حرفه‌ای و کاربردی.</span></p>
+<div class="project-meta">
+<span>
                             WordPress
                         </span>
-
-                        <span>
+<span>
                             Plugin
                         </span>
-
-                    </div>
-
-                </article>
-
-
-                <!-- HTML Game -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-
-                        <div class="project-icon">
+</div>
+</article>
+<!-- HTML Game -->
+<article class="project-card">
+<div class="project-top">
+<div class="project-icon">
                             🎮
                         </div>
-
-                        <div class="status done">
-                            ✓ تکمیل‌شده
-                        </div>
-
-                    </div>
-
-                    <h3>
-                        بازی عملیاتی HTML
-                    </h3>
-
-                    <p>
-                        یک بازی عملیاتی گرافیکی تحت وب
-                        با تمرکز روی تعامل، گیم‌پلی و تجربه
-                        بازی در مرورگر.
-                    </p>
-
-                    <div class="project-meta">
-
-                        <span>
+<div class="status done"><span class="lang-text" data-en="✓ Completed" data-fa="✓ تکمیل‌شده">✓ تکمیل‌شده</span></div>
+</div>
+<h3><span class="lang-text" data-en="HTML Operation Game" data-fa="بازی عملیاتی HTML">بازی عملیاتی HTML</span></h3>
+<p><span class="lang-text" data-en="A graphical web-based operation game focused on interaction, gameplay and the browser gaming experience." data-fa="یک بازی عملیاتی گرافیکی تحت وب با تمرکز روی تعامل، گیم‌پلی و تجربه بازی در مرورگر.">یک بازی عملیاتی گرافیکی تحت وب با تمرکز روی تعامل، گیم‌پلی و تجربه بازی در مرورگر.</span></p>
+<div class="project-meta">
+<span>
                             HTML
                         </span>
-
-                        <span>
+<span>
                             JavaScript
                         </span>
-
-                        <span>
+<span>
                             WebGL
                         </span>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- FEATURED -->
-
-        <section class="featured">
-
-            <div>
-
-                <div class="badge">
-                    B&B Studio
+</div>
+</article>
+</div>
+</section>
+<!-- FEATURED -->
+<section class="featured">
+<div>
+<div class="badge">
+                    B&amp;B Studio
                 </div>
-
-                <h3>
-                    ایده‌ها را واقعی می‌کنیم.
-                </h3>
-
-                <p>
-                    B&B Studio روی ساخت پروژه‌های واقعی
-                    در زمینه وب، نرم‌افزار، گیم و فناوری تمرکز دارد.
-                    هر پروژه از یک ایده شروع می‌شود و مرحله‌به‌مرحله
-                    به یک محصول قابل استفاده تبدیل می‌شود.
-                </p>
-
-            </div>
-
-
-            <div class="featured-visual">
-
-                <img
-                    class="featured-logo"
-                    src="assets/logo.png"
-                    alt="B&B Studio Logo"
-                >
-
-            </div>
-
-        </section>
-
-
-        <!-- COMING SOON -->
-
-        <section class="project-section">
-
-            <div class="section-heading">
-
-                <div>
-
-                    <h2>
-                        به‌زودی
-                    </h2>
-
-                </div>
-
-                <p>
-                    پروژه‌هایی که در مسیر توسعه قرار دارند.
-                </p>
-
-            </div>
-
-
-            <div class="projects-grid">
-
-                <!-- B&B AI -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-
-                        <div class="project-icon">
+<h3><span class="lang-text" data-en="We Make Ideas Real." data-fa="ایده‌ها را واقعی می‌کنیم.">ایده‌ها را واقعی می‌کنیم.</span></h3>
+<p><span class="lang-text" data-en="B&amp;B Studio focuses on building real projects in web, software, gaming and technology. Every project starts with an idea and gradually becomes a usable product." data-fa="B&amp;B Studio روی ساخت پروژه‌های واقعی در زمینه وب، نرم‌افزار، گیم و فناوری تمرکز دارد. هر پروژه از یک ایده شروع می‌شود و مرحله‌به‌مرحله به یک محصول قابل استفاده تبدیل می‌شود.">B&amp;B Studio روی ساخت پروژه‌های واقعی در زمینه وب، نرم‌افزار، گیم و فناوری تمرکز دارد. هر پروژه از یک ایده شروع می‌شود و مرحله‌به‌مرحله به یک محصول قابل استفاده تبدیل می‌شود.</span></p>
+</div>
+<div class="featured-visual">
+<img alt="B&amp;B Studio Logo" class="featured-logo" src="assets/logo.png"/>
+</div>
+</section>
+<!-- COMING SOON -->
+<section class="project-section">
+<div class="section-heading">
+<div>
+<h2><span class="lang-text" data-en="Coming Soon" data-fa="به‌زودی">به‌زودی</span></h2>
+</div>
+<p><span class="lang-text" data-en="Projects that are currently in development." data-fa="پروژه‌هایی که در مسیر توسعه قرار دارند.">پروژه‌هایی که در مسیر توسعه قرار دارند.</span></p>
+</div>
+<div class="projects-grid">
+<!-- B&B AI -->
+<article class="project-card">
+<div class="project-top">
+<div class="project-icon">
                             🤖
                         </div>
-
-                        <div class="status soon">
-                            🔜 به‌زودی
-                        </div>
-
-                    </div>
-
-                    <h3>
-                        B&B AI
+<div class="status soon"><span class="lang-text" data-en="🔜 Coming Soon" data-fa="🔜 به‌زودی">🔜 به‌زودی</span></div>
+</div>
+<h3>
+                        B&amp;B AI
                     </h3>
-
-                    <p>
-                        پروژه هوش مصنوعی B&B Studio برای
-                        ساخت تجربه‌های هوشمندتر و ابزارهای
-                        کاربردی.
-                    </p>
-
-                    <div class="project-meta">
-
-                        <span>
+<p><span class="lang-text" data-en="B&amp;B Studio's AI project for building smarter experiences and useful tools." data-fa="پروژه هوش مصنوعی B&amp;B Studio برای ساخت تجربه‌های هوشمندتر و ابزارهای کاربردی.">پروژه هوش مصنوعی B&amp;B Studio برای ساخت تجربه‌های هوشمندتر و ابزارهای کاربردی.</span></p>
+<div class="project-meta">
+<span>
                             AI
                         </span>
-
-                        <span>
+<span>
                             Technology
                         </span>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Gamer Kids -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-
-                        <div class="project-icon">
+</div>
+</article>
+<!-- Gamer Kids -->
+<article class="project-card">
+<div class="project-top">
+<div class="project-icon">
                             🎮
                         </div>
-
-                        <div class="status soon">
-                            🔜 به‌زودی
-                        </div>
-
-                    </div>
-
-                    <h3>
+<div class="status soon"><span class="lang-text" data-en="🔜 Coming Soon" data-fa="🔜 به‌زودی">🔜 به‌زودی</span></div>
+</div>
+<h3>
                         Gamer Kids
                     </h3>
-
-                    <p>
-                        یک پروژه گیمینگ با تمرکز روی تجربه‌های
-                        تعاملی، بازی و دنیای چندنفره.
-                    </p>
-
-                    <div class="project-meta">
-
-                        <span>
+<p><span class="lang-text" data-en="A gaming project focused on interactive experiences, gameplay and a multiplayer world." data-fa="یک پروژه گیمینگ با تمرکز روی تجربه‌های تعاملی، بازی و دنیای چندنفره.">یک پروژه گیمینگ با تمرکز روی تجربه‌های تعاملی، بازی و دنیای چندنفره.</span></p>
+<div class="project-meta">
+<span>
                             Gaming
                         </span>
-
-                        <span>
+<span>
                             Multiplayer
                         </span>
-
-                    </div>
-
-                </article>
-
-
-                <!-- B&B News -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-
-                        <div class="project-icon">
+</div>
+</article>
+<!-- B&B News -->
+<article class="project-card">
+<div class="project-top">
+<div class="project-icon">
                             📰
                         </div>
-
-                        <div class="status soon">
-                            🔜 به‌زودی
-                        </div>
-
-                    </div>
-
-                    <h3>
-                        B&B News
+<div class="status soon"><span class="lang-text" data-en="🔜 Coming Soon" data-fa="🔜 به‌زودی">🔜 به‌زودی</span></div>
+</div>
+<h3>
+                        B&amp;B News
                     </h3>
-
-                    <p>
-                        پلتفرمی برای نمایش اخبار و محتوای مرتبط
-                        با فناوری، پروژه‌ها و دنیای B&B Studio.
-                    </p>
-
-                    <div class="project-meta">
-
-                        <span>
+<p><span class="lang-text" data-en="A platform for displaying news and content related to technology, projects and the B&amp;B Studio world." data-fa="پلتفرمی برای نمایش اخبار و محتوای مرتبط با فناوری، پروژه‌ها و دنیای B&amp;B Studio.">پلتفرمی برای نمایش اخبار و محتوای مرتبط با فناوری، پروژه‌ها و دنیای B&amp;B Studio.</span></p>
+<div class="project-meta">
+<span>
                             News
                         </span>
-
-                        <span>
+<span>
                             Web
                         </span>
-
-                    </div>
-
-                </article>
-
-
-                <!-- B&B Project -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-
-                        <div class="project-icon">
+</div>
+</article>
+<!-- B&B Project -->
+<article class="project-card">
+<div class="project-top">
+<div class="project-icon">
                             🚀
                         </div>
-
-                        <div class="status soon">
-                            🔜 به‌زودی
-                        </div>
-
-                    </div>
-
-                    <h3>
-                        B&B Project
+<div class="status soon"><span class="lang-text" data-en="🔜 Coming Soon" data-fa="🔜 به‌زودی">🔜 به‌زودی</span></div>
+</div>
+<h3>
+                        B&amp;B Project
                     </h3>
-
-                    <p>
-                        مجموعه‌ای از ایده‌ها و پروژه‌های آینده
-                        B&B Studio که در مراحل مختلف طراحی و توسعه
-                        قرار خواهند گرفت.
-                    </p>
-
-                    <div class="project-meta">
-
-                        <span>
+<p><span class="lang-text" data-en="A collection of future B&amp;B Studio ideas and projects that will move through different stages of design and development." data-fa="مجموعه‌ای از ایده‌ها و پروژه‌های آینده B&amp;B Studio که در مراحل مختلف طراحی و توسعه قرار خواهند گرفت.">مجموعه‌ای از ایده‌ها و پروژه‌های آینده B&amp;B Studio که در مراحل مختلف طراحی و توسعه قرار خواهند گرفت.</span></p>
+<div class="project-meta">
+<span>
                             Future
                         </span>
-
-                        <span>
+<span>
                             Projects
                         </span>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- CTA -->
-
-        <section class="cta">
-
-            <h2>
-                یک ایده داری؟
-            </h2>
-
-            <p>
-                شاید پروژه بعدی B&B Studio از همین ایده شروع شود.
-                برای آشنایی بیشتر با B&B Studio می‌توانی صفحه
-                درباره ما را ببینی.
-            </p>
-
-            <a
-                class="cta-btn"
-                href="about.html"
-            >
-                درباره B&B Studio
-                ←
-            </a>
-
-        </section>
-
-    </main>
-
-
-    <!-- =========================
+</div>
+</article>
+</div>
+</section>
+<!-- CTA -->
+<section class="cta">
+<h2><span class="lang-text" data-en="Have an Idea?" data-fa="یک ایده داری؟">یک ایده داری؟</span></h2>
+<p><span class="lang-text" data-en="Maybe the next B&amp;B Studio project will start with this idea. To learn more about B&amp;B Studio, you can visit the About page." data-fa="شاید پروژه بعدی B&amp;B Studio از همین ایده شروع شود. برای آشنایی بیشتر با B&amp;B Studio می‌توانی صفحه درباره ما را ببینی.">شاید پروژه بعدی B&amp;B Studio از همین ایده شروع شود. برای آشنایی بیشتر با B&amp;B Studio می‌توانی صفحه درباره ما را ببینی.</span></p>
+<a class="cta-btn" href="about.html"><span class="lang-text" data-en="About B&amp;B Studio →" data-fa="درباره B&amp;B Studio ←">درباره B&amp;B Studio ←</span></a>
+</section>
+</main>
+<!-- =========================
          FOOTER
     ========================= -->
+<footer>
 
-    <footer>
-
-        ©
-        <span id="year"></span>
-
-        <strong>B&B Studio</strong>
-
-        — ایده‌ها را واقعی می‌کنیم.
-
-    </footer>
-
-
-    <!-- =========================
+        © <span id="year"></span>
+<strong>B&amp;B Studio</strong><span class="lang-text" data-en="— We Make Ideas Real." data-fa="— We Make Ideas Real.">— We Make Ideas Real.</span></footer>
+<!-- =========================
          JAVASCRIPT
     ========================= -->
 
-    <script>
+<script>
+(function(){
+  const root=document.documentElement;
+  const langBtn=document.getElementById("languageBtn");
+  const nodes=[...document.querySelectorAll(".lang-text")];
+  const title=document.querySelector("title");
+  const meta=document.querySelector('meta[name="description"]');
+  const titleFa=title?.dataset.fa || title?.textContent || "";
+  const titleEn=title?.dataset.en || titleFa;
+  const metaFa=meta?.dataset.fa || meta?.content || "";
+  const metaEn=meta?.dataset.en || metaFa;
+  function setLanguage(lang){
+    lang=lang==="fa"?"fa":"en";
+    root.lang=lang; root.dir=lang==="fa"?"rtl":"ltr";
+    nodes.forEach(n=>n.textContent=lang==="fa"?n.dataset.fa:n.dataset.en);
+    if(title) title.textContent=lang==="fa"?titleFa:titleEn;
+    if(meta) meta.content=lang==="fa"?metaFa:metaEn;
+    if(langBtn){ langBtn.textContent=lang==="en"?"FA":"EN"; langBtn.setAttribute("aria-label",lang==="en"?"Switch to Persian":"تغییر به انگلیسی"); }
+    localStorage.setItem("bb-language",lang);
+  }
+  langBtn?.addEventListener("click",()=>setLanguage(root.lang==="en"?"fa":"en"));
+  setLanguage(localStorage.getItem("bb-language")||"en");
+})();
 
-        const themeBtn =
-            document.getElementById("themeBtn");
-
-        const savedTheme =
-            localStorage.getItem("bb-theme");
-
-
-        if (savedTheme === "light") {
-
-            document.body.classList.add("light");
-
-            themeBtn.textContent = "🌙";
-
-        } else {
-
-            themeBtn.textContent = "☀️";
-
-        }
-
-
-        themeBtn.addEventListener(
-            "click",
-            () => {
-
-                document.body.classList.toggle("light");
-
-                const isLight =
-                    document.body.classList.contains("light");
-
-                localStorage.setItem(
-                    "bb-theme",
-                    isLight ? "light" : "dark"
-                );
-
-                themeBtn.textContent =
-                    isLight ? "🌙" : "☀️";
-
-            }
-        );
-
-
-        document.getElementById("year").textContent =
-            new Date().getFullYear();
-
-    </script>
-
-</body>
-
+const themeBtn=document.getElementById("themeBtn");
+const savedTheme=localStorage.getItem("bb-theme");
+if(savedTheme==="light"){document.body.classList.add("light");themeBtn.textContent="🌙";}else{themeBtn.textContent="☀️";}
+themeBtn.addEventListener("click",()=>{document.body.classList.toggle("light");const isLight=document.body.classList.contains("light");localStorage.setItem("bb-theme",isLight?"light":"dark");themeBtn.textContent=isLight?"🌙":"☀️";});
+const year=document.getElementById("year"); if(year) year.textContent=new Date().getFullYear();
+</script></body>
 </html>
