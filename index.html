@@ -1,13 +1,17 @@
+
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>B&B Studio | ایده‌ها را واقعی می‌کنیم</title>
-    <meta name="description" content="B&B Studio؛ استودیوی فناوری، نرم‌افزار، بازی و پروژه‌های خلاقانه. ایده‌ها را واقعی می‌کنیم.">
+    <title>B&B Studio | We Make Ideas Real</title>
+    <meta
+        name="description"
+        content="B&B Studio; an independent studio for software, games, websites and creative digital projects."
+    >
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/logo.png">
     <link rel="shortcut icon" href="assets/logo.png">
 
@@ -56,12 +60,24 @@
         body {
             font-family: Tahoma, Arial, sans-serif;
             background:
-                radial-gradient(circle at 15% 15%, rgba(50,156,255,.12), transparent 30%),
-                radial-gradient(circle at 85% 30%, rgba(50,156,255,.08), transparent 30%),
+                radial-gradient(
+                    circle at 15% 15%,
+                    rgba(50,156,255,.12),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 85% 30%,
+                    rgba(50,156,255,.08),
+                    transparent 30%
+                ),
                 var(--bg);
             color: var(--text);
             line-height: 1.8;
             transition: .3s ease;
+        }
+
+        body[dir="rtl"] {
+            font-family: Tahoma, Arial, sans-serif;
         }
 
         a {
@@ -69,12 +85,18 @@
             text-decoration: none;
         }
 
+        button {
+            font-family: inherit;
+        }
+
         .container {
             width: min(100% - 40px, var(--max-width));
             margin: auto;
         }
 
-        /* HEADER */
+        /* =========================
+           HEADER
+        ========================= */
 
         header {
             position: fixed;
@@ -119,7 +141,11 @@
         }
 
         .brand span {
-            background: linear-gradient(90deg, var(--text), var(--accent));
+            background: linear-gradient(
+                90deg,
+                var(--text),
+                var(--accent)
+            );
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -142,18 +168,44 @@
             background: var(--card-hover);
         }
 
-        .theme-btn {
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .theme-btn,
+        .language-btn {
             border: 1px solid var(--border);
             background: var(--card);
             color: var(--text);
-            width: 42px;
             height: 42px;
             border-radius: 12px;
             cursor: pointer;
+            transition: .2s ease;
+        }
+
+        .theme-btn {
+            width: 42px;
             font-size: 18px;
         }
 
-        /* HERO */
+        .language-btn {
+            min-width: 52px;
+            padding: 0 12px;
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        .theme-btn:hover,
+        .language-btn:hover {
+            background: var(--card-hover);
+            transform: translateY(-2px);
+        }
+
+        /* =========================
+           HERO
+        ========================= */
 
         .hero {
             min-height: 100vh;
@@ -211,7 +263,11 @@
         }
 
         .gradient {
-            background: linear-gradient(90deg, var(--accent), var(--accent-2));
+            background: linear-gradient(
+                90deg,
+                var(--accent),
+                var(--accent-2)
+            );
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -262,7 +318,9 @@
             transform: translateY(-3px);
         }
 
-        /* SECTIONS */
+        /* =========================
+           SECTIONS
+        ========================= */
 
         section {
             padding: 95px 0;
@@ -290,7 +348,9 @@
             max-width: 700px;
         }
 
-        /* CARDS */
+        /* =========================
+           CARDS
+        ========================= */
 
         .grid {
             display: grid;
@@ -334,7 +394,9 @@
             font-size: 14px;
         }
 
-        /* PROJECTS */
+        /* =========================
+           PROJECTS
+        ========================= */
 
         .project {
             position: relative;
@@ -360,14 +422,20 @@
             background: rgba(113,227,163,.09);
         }
 
-        /* CTA */
+        /* =========================
+           CTA
+        ========================= */
 
         .cta {
             border: 1px solid var(--border);
             border-radius: 32px;
             padding: 55px;
             background:
-                radial-gradient(circle at 80% 20%, rgba(50,156,255,.18), transparent 35%),
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(50,156,255,.18),
+                    transparent 35%
+                ),
                 var(--card);
             text-align: center;
         }
@@ -382,7 +450,9 @@
             margin-bottom: 25px;
         }
 
-        /* FOOTER */
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
             border-top: 1px solid var(--border);
@@ -398,9 +468,12 @@
             gap: 20px;
         }
 
-        /* RESPONSIVE */
+        /* =========================
+           RESPONSIVE
+        ========================= */
 
         @media (max-width: 850px) {
+
             .grid {
                 grid-template-columns: 1fr;
             }
@@ -423,6 +496,7 @@
         }
 
         @media (max-width: 520px) {
+
             .container {
                 width: min(100% - 25px, var(--max-width));
             }
@@ -448,6 +522,11 @@
                 flex-direction: column;
                 text-align: center;
             }
+
+            .language-btn {
+                min-width: 48px;
+                padding: 0 10px;
+            }
         }
     </style>
 </head>
@@ -463,15 +542,33 @@
         </a>
 
         <div class="links">
-            <a href="index.html">خانه</a>
-            <a href="about.html">درباره ما</a>
-            <a href="projects.html">پروژه‌ها</a>
-            <a href="contact.html">ارتباط با ما</a>
+            <a href="index.html" data-i18n="nav.home">Home</a>
+            <a href="about.html" data-i18n="nav.about">About</a>
+            <a href="projects.html" data-i18n="nav.projects">Projects</a>
+            <a href="contact.html" data-i18n="nav.contact">Contact</a>
         </div>
 
-        <button class="theme-btn" id="themeBtn" aria-label="تغییر حالت">
-            ☀️
-        </button>
+        <div class="nav-actions">
+
+            <button
+                class="language-btn"
+                id="languageBtn"
+                type="button"
+                aria-label="Change language"
+            >
+                FA
+            </button>
+
+            <button
+                class="theme-btn"
+                id="themeBtn"
+                type="button"
+                aria-label="Toggle theme"
+            >
+                ☀️
+            </button>
+
+        </div>
 
     </nav>
 </header>
@@ -479,7 +576,10 @@
 
 <main>
 
+    <!-- HERO -->
+
     <section class="hero">
+
         <div class="container">
 
             <div class="hero-content">
@@ -489,206 +589,696 @@
                 </div>
 
                 <h1>
-                    ایده‌ها را
-                    <span class="gradient">واقعی می‌کنیم.</span>
+                    <span data-i18n="hero.title1">
+                        We Make
+                    </span>
+                    <span
+                        class="gradient"
+                        data-i18n="hero.title2"
+                    >
+                        Ideas Real.
+                    </span>
                 </h1>
 
-                <p>
-                    B&B Studio یک استودیوی مستقل برای ساخت نرم‌افزار،
-                    بازی، وب‌سایت و پروژه‌های خلاقانه است؛
-                    جایی که ایده‌ها از یک فکر ساده شروع می‌شوند
-                    و به پروژه‌های واقعی تبدیل می‌شوند.
+                <p data-i18n="hero.description">
+                    B&B Studio is an independent studio for building
+                    software, games, websites and creative projects;
+                    where simple ideas turn into real projects.
                 </p>
 
                 <div class="buttons">
-                    <a class="btn btn-primary" href="projects.html">
-                        مشاهده پروژه‌ها
+
+                    <a
+                        class="btn btn-primary"
+                        href="projects.html"
+                        data-i18n="hero.projects"
+                    >
+                        View Projects
                     </a>
 
-                    <a class="btn btn-secondary" href="about.html">
-                        درباره B&B Studio
+                    <a
+                        class="btn btn-secondary"
+                        href="about.html"
+                        data-i18n="hero.about"
+                    >
+                        About B&B Studio
                     </a>
+
                 </div>
 
             </div>
 
         </div>
+
     </section>
 
 
+    <!-- SERVICES -->
+
     <section>
+
         <div class="container">
 
             <div class="section-title">
+
                 <span>WHAT WE DO</span>
-                <h2>تکنولوژی برای ساختن ایده‌ها</h2>
-                <p>
-                    از طراحی وب و نرم‌افزار گرفته تا بازی و ابزارهای دیجیتال،
-                    تمرکز B&B Studio روی ساخت پروژه‌های واقعی و قابل استفاده است.
+
+                <h2 data-i18n="services.title">
+                    Technology for Building Ideas
+                </h2>
+
+                <p data-i18n="services.description">
+                    From web design and software to games and digital tools,
+                    B&B Studio focuses on building real and useful projects.
                 </p>
+
             </div>
+
 
             <div class="grid">
 
                 <div class="card">
+
                     <div class="icon">⌘</div>
-                    <h3>نرم‌افزار</h3>
-                    <p>
-                        ساخت ابزارها و نرم‌افزارهای کاربردی با تمرکز روی تجربه کاربری.
+
+                    <h3 data-i18n="services.software.title">
+                        Software
+                    </h3>
+
+                    <p data-i18n="services.software.description">
+                        Building useful tools and software with a focus
+                        on user experience.
                     </p>
+
                 </div>
 
+
                 <div class="card">
+
                     <div class="icon">◈</div>
-                    <h3>بازی‌سازی</h3>
-                    <p>
-                        طراحی و توسعه بازی‌های تعاملی برای تجربه‌های متفاوت و جذاب.
+
+                    <h3 data-i18n="services.games.title">
+                        Game Development
+                    </h3>
+
+                    <p data-i18n="services.games.description">
+                        Designing and developing interactive games
+                        for different and engaging experiences.
                     </p>
+
                 </div>
 
+
                 <div class="card">
+
                     <div class="icon">⌁</div>
-                    <h3>وب و فناوری</h3>
-                    <p>
-                        ساخت وب‌سایت‌ها و پروژه‌های دیجیتال مدرن و سریع.
+
+                    <h3 data-i18n="services.web.title">
+                        Web & Technology
+                    </h3>
+
+                    <p data-i18n="services.web.description">
+                        Building modern, fast and practical websites
+                        and digital projects.
                     </p>
+
                 </div>
 
             </div>
 
         </div>
+
     </section>
 
 
+    <!-- PROJECTS -->
+
     <section>
+
         <div class="container">
 
             <div class="section-title">
+
                 <span>PROJECTS</span>
-                <h2>پروژه‌های B&B Studio</h2>
-                <p>
-                    پروژه‌هایی که ساخته شده‌اند و ایده‌هایی که در مسیر تبدیل شدن
-                    به محصولات واقعی هستند.
+
+                <h2 data-i18n="projects.title">
+                    B&B Studio Projects
+                </h2>
+
+                <p data-i18n="projects.description">
+                    Projects that have been built and ideas that are
+                    on their way to becoming real products.
                 </p>
+
             </div>
+
 
             <div class="grid">
 
                 <div class="card project completed">
-                    <span class="project-tag">تکمیل شده</span>
+
+                    <span
+                        class="project-tag"
+                        data-i18n="status.completed"
+                    >
+                        Completed
+                    </span>
+
                     <h3>Ninja TablePro</h3>
-                    <p>
-                        افزونه وردپرس برای ساخت و مدیریت جدول‌های حرفه‌ای.
+
+                    <p data-i18n="project.ninja">
+                        A WordPress plugin for creating and managing
+                        professional tables.
                     </p>
+
                 </div>
+
 
                 <div class="card project completed">
-                    <span class="project-tag">تکمیل شده</span>
-                    <h3>بازی عملیاتی HTML</h3>
-                    <p>
-                        یک بازی عملیاتی گرافیکی تحت وب با تمرکز روی تعامل و گیم‌پلی.
+
+                    <span
+                        class="project-tag"
+                        data-i18n="status.completed"
+                    >
+                        Completed
+                    </span>
+
+                    <h3 data-i18n="project.htmlgame.title">
+                        HTML Operation Game
+                    </h3>
+
+                    <p data-i18n="project.htmlgame.description">
+                        A graphical web-based operation game focused
+                        on interaction and gameplay.
                     </p>
+
                 </div>
 
+
                 <div class="card project">
-                    <span class="project-tag">به‌زودی</span>
+
+                    <span
+                        class="project-tag"
+                        data-i18n="status.soon"
+                    >
+                        Coming Soon
+                    </span>
+
                     <h3>B&B AI</h3>
-                    <p>
-                        پروژه هوش مصنوعی B&B Studio برای تجربه‌های هوشمندتر.
+
+                    <p data-i18n="project.ai">
+                        B&B Studio's artificial intelligence project
+                        for smarter experiences.
                     </p>
+
                 </div>
 
+
                 <div class="card project">
-                    <span class="project-tag">به‌زودی</span>
+
+                    <span
+                        class="project-tag"
+                        data-i18n="status.soon"
+                    >
+                        Coming Soon
+                    </span>
+
                     <h3>Gamer Kids</h3>
-                    <p>
-                        پروژه‌ای گیمینگ با تمرکز روی تجربه چندنفره و دنیای تعاملی.
+
+                    <p data-i18n="project.gamerkids">
+                        A gaming project focused on multiplayer
+                        experiences and an interactive world.
                     </p>
+
                 </div>
 
+
                 <div class="card project">
-                    <span class="project-tag">به‌زودی</span>
+
+                    <span
+                        class="project-tag"
+                        data-i18n="status.soon"
+                    >
+                        Coming Soon
+                    </span>
+
                     <h3>B&B News</h3>
-                    <p>
-                        پلتفرمی برای نمایش اخبار و محتوای مرتبط با فناوری و پروژه‌ها.
+
+                    <p data-i18n="project.news">
+                        A platform for technology news and content
+                        related to B&B Studio projects.
                     </p>
+
                 </div>
 
+
                 <div class="card project">
-                    <span class="project-tag">به‌زودی</span>
+
+                    <span
+                        class="project-tag"
+                        data-i18n="status.soon"
+                    >
+                        Coming Soon
+                    </span>
+
                     <h3>B&B Project</h3>
-                    <p>
-                        مجموعه‌ای از ایده‌ها و پروژه‌های آینده B&B Studio.
+
+                    <p data-i18n="project.project">
+                        A collection of future ideas and projects
+                        from B&B Studio.
                     </p>
+
                 </div>
 
             </div>
 
         </div>
+
     </section>
 
 
+    <!-- CTA -->
+
     <section>
+
         <div class="container">
 
             <div class="cta">
 
                 <h2>
-                    ایده‌ای داری؟
-                    <span class="gradient">بسازیمش.</span>
+
+                    <span data-i18n="cta.title1">
+                        Have an idea?
+                    </span>
+
+                    <span
+                        class="gradient"
+                        data-i18n="cta.title2"
+                    >
+                        Let's Build It.
+                    </span>
+
                 </h2>
 
-                <p>
-                    B&B Studio جایی برای تبدیل ایده‌های خلاقانه به پروژه‌های واقعی است.
+                <p data-i18n="cta.description">
+                    B&B Studio is a place for turning creative ideas
+                    into real projects.
                 </p>
 
-                <a class="btn btn-primary" href="contact.html">
-                    ارتباط با ما
+                <a
+                    class="btn btn-primary"
+                    href="contact.html"
+                    data-i18n="cta.contact"
+                >
+                    Contact Us
                 </a>
 
             </div>
 
         </div>
+
     </section>
 
 </main>
 
 
 <footer>
+
     <div class="container footer-inner">
-        <span>© <span id="year"></span> B&B Studio</span>
-        <span>ایده‌ها را واقعی می‌کنیم.</span>
+
+        <span>
+            © <span id="year"></span> B&B Studio
+        </span>
+
+        <span data-i18n="footer.slogan">
+            We Make Ideas Real.
+        </span>
+
     </div>
+
 </footer>
 
 
 <script>
-    const body = document.body;
-    const themeBtn = document.getElementById("themeBtn");
 
-    const savedTheme = localStorage.getItem("bb-theme");
+    /* =========================
+       TRANSLATIONS
+    ========================= */
 
-    if (savedTheme === "light") {
-        body.classList.add("light");
-        themeBtn.textContent = "🌙";
+    const translations = {
+
+        en: {
+
+            nav: {
+                home: "Home",
+                about: "About",
+                projects: "Projects",
+                contact: "Contact"
+            },
+
+            hero: {
+                title1: "We Make",
+                title2: "Ideas Real.",
+                description:
+                    "B&B Studio is an independent studio for building software, games, websites and creative projects; where simple ideas turn into real projects.",
+                projects: "View Projects",
+                about: "About B&B Studio"
+            },
+
+            services: {
+                title: "Technology for Building Ideas",
+                description:
+                    "From web design and software to games and digital tools, B&B Studio focuses on building real and useful projects.",
+
+                software: {
+                    title: "Software",
+                    description:
+                        "Building useful tools and software with a focus on user experience."
+                },
+
+                games: {
+                    title: "Game Development",
+                    description:
+                        "Designing and developing interactive games for different and engaging experiences."
+                },
+
+                web: {
+                    title: "Web & Technology",
+                    description:
+                        "Building modern, fast and practical websites and digital projects."
+                }
+            },
+
+            projects: {
+                title: "B&B Studio Projects",
+                description:
+                    "Projects that have been built and ideas that are on their way to becoming real products."
+            },
+
+            status: {
+                completed: "Completed",
+                soon: "Coming Soon"
+            },
+
+            project: {
+                ninja:
+                    "A WordPress plugin for creating and managing professional tables.",
+
+                htmlgame: {
+                    title: "HTML Operation Game",
+                    description:
+                        "A graphical web-based operation game focused on interaction and gameplay."
+                },
+
+                ai:
+                    "B&B Studio's artificial intelligence project for smarter experiences.",
+
+                gamerkids:
+                    "A gaming project focused on multiplayer experiences and an interactive world.",
+
+                news:
+                    "A platform for technology news and content related to B&B Studio projects.",
+
+                project:
+                    "A collection of future ideas and projects from B&B Studio."
+            },
+
+            cta: {
+                title1: "Have an idea?",
+                title2: "Let's Build It.",
+                description:
+                    "B&B Studio is a place for turning creative ideas into real projects.",
+                contact: "Contact Us"
+            },
+
+            footer: {
+                slogan: "We Make Ideas Real."
+            }
+
+        },
+
+
+        fa: {
+
+            nav: {
+                home: "خانه",
+                about: "درباره ما",
+                projects: "پروژه‌ها",
+                contact: "ارتباط با ما"
+            },
+
+            hero: {
+                title1: "ایده‌ها را",
+                title2: "واقعی می‌کنیم.",
+                description:
+                    "B&B Studio یک استودیوی مستقل برای ساخت نرم‌افزار، بازی، وب‌سایت و پروژه‌های خلاقانه است؛ جایی که ایده‌ها از یک فکر ساده شروع می‌شوند و به پروژه‌های واقعی تبدیل می‌شوند.",
+                projects: "مشاهده پروژه‌ها",
+                about: "درباره B&B Studio"
+            },
+
+            services: {
+                title: "تکنولوژی برای ساختن ایده‌ها",
+                description:
+                    "از طراحی وب و نرم‌افزار گرفته تا بازی و ابزارهای دیجیتال، تمرکز B&B Studio روی ساخت پروژه‌های واقعی و قابل استفاده است.",
+
+                software: {
+                    title: "نرم‌افزار",
+                    description:
+                        "ساخت ابزارها و نرم‌افزارهای کاربردی با تمرکز روی تجربه کاربری."
+                },
+
+                games: {
+                    title: "بازی‌سازی",
+                    description:
+                        "طراحی و توسعه بازی‌های تعاملی برای تجربه‌های متفاوت و جذاب."
+                },
+
+                web: {
+                    title: "وب و فناوری",
+                    description:
+                        "ساخت وب‌سایت‌ها و پروژه‌های دیجیتال مدرن و سریع."
+                }
+            },
+
+            projects: {
+                title: "پروژه‌های B&B Studio",
+                description:
+                    "پروژه‌هایی که ساخته شده‌اند و ایده‌هایی که در مسیر تبدیل شدن به محصولات واقعی هستند."
+            },
+
+            status: {
+                completed: "تکمیل شده",
+                soon: "به‌زودی"
+            },
+
+            project: {
+                ninja:
+                    "افزونه وردپرس برای ساخت و مدیریت جدول‌های حرفه‌ای.",
+
+                htmlgame: {
+                    title: "بازی عملیاتی HTML",
+                    description:
+                        "یک بازی عملیاتی گرافیکی تحت وب با تمرکز روی تعامل و گیم‌پلی."
+                },
+
+                ai:
+                    "پروژه هوش مصنوعی B&B Studio برای تجربه‌های هوشمندتر.",
+
+                gamerkids:
+                    "پروژه‌ای گیمینگ با تمرکز روی تجربه چندنفره و دنیای تعاملی.",
+
+                news:
+                    "پلتفرمی برای نمایش اخبار و محتوای مرتبط با فناوری و پروژه‌ها.",
+
+                project:
+                    "مجموعه‌ای از ایده‌ها و پروژه‌های آینده B&B Studio."
+            },
+
+            cta: {
+                title1: "ایده‌ای داری؟",
+                title2: "بسازیمش.",
+                description:
+                    "B&B Studio جایی برای تبدیل ایده‌های خلاقانه به پروژه‌های واقعی است.",
+                contact: "ارتباط با ما"
+            },
+
+            footer: {
+                slogan: "ایده‌ها را واقعی می‌کنیم."
+            }
+
+        }
+
+    };
+
+
+    /* =========================
+       LANGUAGE SYSTEM
+    ========================= */
+
+    const languageBtn =
+        document.getElementById("languageBtn");
+
+    function getText(object, path) {
+
+        return path
+            .split(".")
+            .reduce(
+                (current, key) =>
+                    current ? current[key] : null,
+                object
+            );
+
     }
 
-    themeBtn.addEventListener("click", () => {
-        body.classList.toggle("light");
 
-        const isLight = body.classList.contains("light");
+    function setLanguage(language) {
 
-        localStorage.setItem(
-            "bb-theme",
-            isLight ? "light" : "dark"
+        const selectedLanguage =
+            translations[language]
+                ? language
+                : "en";
+
+        const data =
+            translations[selectedLanguage];
+
+        document.documentElement.lang =
+            selectedLanguage;
+
+        document.documentElement.dir =
+            selectedLanguage === "fa"
+                ? "rtl"
+                : "ltr";
+
+        document
+            .querySelectorAll("[data-i18n]")
+            .forEach(element => {
+
+                const key =
+                    element.getAttribute("data-i18n");
+
+                const value =
+                    getText(data, key);
+
+                if (value !== null) {
+                    element.textContent = value;
+                }
+
+            });
+
+
+        document.title =
+            selectedLanguage === "fa"
+                ? "B&B Studio | ایده‌ها را واقعی می‌کنیم"
+                : "B&B Studio | We Make Ideas Real";
+
+
+        languageBtn.textContent =
+            selectedLanguage === "en"
+                ? "FA"
+                : "EN";
+
+
+        languageBtn.setAttribute(
+            "aria-label",
+            selectedLanguage === "en"
+                ? "Switch to Persian"
+                : "تغییر به انگلیسی"
         );
 
-        themeBtn.textContent = isLight ? "🌙" : "☀️";
-    });
+
+        localStorage.setItem(
+            "bb-language",
+            selectedLanguage
+        );
+
+    }
+
+
+    languageBtn.addEventListener(
+        "click",
+        () => {
+
+            const currentLanguage =
+                document.documentElement.lang;
+
+            setLanguage(
+                currentLanguage === "en"
+                    ? "fa"
+                    : "en"
+            );
+
+        }
+    );
+
+
+    const savedLanguage =
+        localStorage.getItem("bb-language");
+
+    setLanguage(
+        savedLanguage === "fa"
+            ? "fa"
+            : "en"
+    );
+
+
+    /* =========================
+       THEME SYSTEM
+    ========================= */
+
+    const body =
+        document.body;
+
+    const themeBtn =
+        document.getElementById("themeBtn");
+
+
+    const savedTheme =
+        localStorage.getItem("bb-theme");
+
+
+    if (savedTheme === "light") {
+
+        body.classList.add("light");
+
+        themeBtn.textContent = "🌙";
+
+    }
+
+
+    themeBtn.addEventListener(
+        "click",
+        () => {
+
+            body.classList.toggle("light");
+
+            const isLight =
+                body.classList.contains("light");
+
+            localStorage.setItem(
+                "bb-theme",
+                isLight
+                    ? "light"
+                    : "dark"
+            );
+
+            themeBtn.textContent =
+                isLight
+                    ? "🌙"
+                    : "☀️";
+
+        }
+    );
+
+
+    /* =========================
+       YEAR
+    ========================= */
 
     document.getElementById("year").textContent =
         new Date().getFullYear();
+
 </script>
 
 </body>
 </html>
+
