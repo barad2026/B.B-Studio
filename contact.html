@@ -1,19 +1,13 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+
+<html dir="ltr" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>ارتباط با ما | B&B Studio</title>
-
-  <meta
-    name="description"
-    content="راه‌های ارتباط با B&B Studio، باراد و بارمان."
-  >
-
-  <link rel="icon" type="image/png" href="assets/logo.png">
-
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title data-en="Contact Us | B&amp;B Studio" data-fa="ارتباط با ما | B&amp;B Studio">ارتباط با ما | B&amp;B Studio</title>
+<meta content="راه‌های ارتباط با B&amp;B Studio، باراد و بارمان." data-en="راه‌های ارتباط با B&amp;B Studio، باراد و بارمان." data-fa="راه‌های ارتباط با B&amp;B Studio، باراد و بارمان." name="description"/>
+<link href="assets/logo.png" rel="icon" type="image/png"/>
+<style>
     :root {
       --bg: #070b12;
       --bg-soft: #0d1420;
@@ -57,7 +51,6 @@
 
     body {
       min-height: 100vh;
-
       font-family:
         Tahoma,
         Arial,
@@ -862,432 +855,185 @@
         padding: 23px;
       }
     }
-  </style>
+  
+        .nav-actions { display:flex; align-items:center; gap:8px; }
+        .language-btn { min-width:52px; height:42px; padding:0 11px; border:1px solid var(--border); background:var(--card); color:var(--text); border-radius:12px; cursor:pointer; font:700 13px inherit; transition:.2s ease; }
+        .language-btn:hover { background:var(--card-hover); transform:translateY(-2px); }
+        .lang-text { display:inline; }
+        @media (max-width:520px) { .language-btn { min-width:48px; height:38px; } }
+</style>
 </head>
-
 <body>
-
-  <!-- =========================
+<!-- =========================
        HEADER
   ========================== -->
+<header>
+<nav class="nav">
+<a class="brand" href="index.html">
+<img alt="B&amp;B Studio" src="assets/logo.png"/>
+<span>B&amp;B Studio</span>
+</a>
+<div class="links">
+<a href="index.html"><span class="lang-text" data-en="Home" data-fa="خانه">خانه</span></a>
+<a href="about.html"><span class="lang-text" data-en="About" data-fa="درباره ما">درباره ما</span></a>
+<a href="projects.html"><span class="lang-text" data-en="Projects" data-fa="پروژه‌ها">پروژه‌ها</span></a>
+<a class="active" href="contact.html"><span class="lang-text" data-en="Contact" data-fa="ارتباط با ما">ارتباط با ما</span></a>
+</div>
 
-  <header>
-    <nav class="nav">
-
-      <!-- لوگو = Home -->
-      <a
-        class="brand"
-        href="https://barad2026.github.io/B.B-Studio/"
-      >
-        <img
-          src="assets/logo.png"
-          alt="B&B Studio"
-        >
-
-        <span>B&B Studio</span>
-      </a>
-
-
-      <div class="links">
-
-        <!-- Home -->
-        <a
-          href="https://barad2026.github.io/B.B-Studio/"
-        >
-          خانه
-        </a>
-
-        <!-- About -->
-        <a href="about.html">
-          درباره ما
-        </a>
-
-        <!-- Projects -->
-        <a href="projects.html">
-          پروژه‌ها
-        </a>
-
-        <!-- Contact -->
-        <a
-          href="contact.html"
-          class="active"
-        >
-          ارتباط با ما
-        </a>
-
-      </div>
-
-
-      <button
-        class="theme-btn"
-        id="themeBtn"
-        type="button"
-        aria-label="تغییر حالت نمایش"
-      >
+<div class="nav-actions"><button aria-label="Switch to Persian" class="language-btn" id="languageBtn" type="button">FA</button><button aria-label="تغییر حالت نمایش" class="theme-btn" id="themeBtn" type="button">
         ☀️
-      </button>
-
-    </nav>
-  </header>
-
-
-  <!-- =========================
+      </button></div></nav>
+</header>
+<!-- =========================
        MAIN
   ========================== -->
-
-  <main>
-
-    <!-- HERO -->
-
-    <section class="hero">
-
-      <div class="badge">
-        ارتباط با B&B Studio
-      </div>
-
-      <h1>
-        با ما در <span>ارتباط</span> باشید
-      </h1>
-
-      <p>
-        برای ارتباط با اعضای B&B Studio و دنبال کردن فعالیت‌ها
-        می‌توانید از راه‌های ارتباطی زیر استفاده کنید.
-      </p>
-
-    </section>
-
-
-    <!-- PEOPLE -->
-
-    <section class="contact-grid">
-
-      <!-- BARAD -->
-
-      <article class="contact-card">
-
-        <div class="person-head">
-
-          <img
-            class="person-avatar"
-            src="assets/profile_barad.jpg"
-            alt="باراد بولحسنی"
-          >
-
-          <div class="person-info">
-
-            <h2>
-              باراد بولحسنی
-            </h2>
-
-            <p>
-              Founder & Developer
+<main>
+<!-- HERO -->
+<section class="hero">
+<div class="badge"><span class="lang-text" data-en="Contact B&amp;B Studio" data-fa="ارتباط با B&amp;B Studio">ارتباط با B&amp;B Studio</span></div>
+<h1><span class="lang-text" data-en="Get in" data-fa="با ما در">با ما در</span><span><span class="lang-text" data-en="Touch" data-fa="ارتباط">ارتباط</span></span><span class="lang-text" data-en="With Us" data-fa="باشید">باشید</span></h1>
+<p><span class="lang-text" data-en="To get in touch with B&amp;B Studio members and follow our activities, you can use the contact methods below." data-fa="برای ارتباط با اعضای B&amp;B Studio و دنبال کردن فعالیت‌ها می‌توانید از راه‌های ارتباطی زیر استفاده کنید.">برای ارتباط با اعضای B&amp;B Studio و دنبال کردن فعالیت‌ها می‌توانید از راه‌های ارتباطی زیر استفاده کنید.</span></p>
+</section>
+<!-- PEOPLE -->
+<section class="contact-grid">
+<!-- BARAD -->
+<article class="contact-card">
+<div class="person-head">
+<img alt="باراد بولحسنی" class="person-avatar" src="assets/profile_barad.jpg"/>
+<div class="person-info">
+<h2><span class="lang-text" data-en="Barad Bolhasani" data-fa="باراد بولحسنی">باراد بولحسنی</span></h2>
+<p>
+              Founder &amp; Developer
             </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="contact-list">
-
-          <!-- Bale -->
-
-          <div class="contact-item">
-
-            <div class="contact-label">
-
-              <span class="contact-icon">
+</div>
+</div>
+<div class="contact-list">
+<!-- Bale -->
+<div class="contact-item">
+<div class="contact-label">
+<span class="contact-icon">
                 B
-              </span>
-
-              بله
-
-            </div>
-
-            <a
-              class="contact-value"
-              href="https://ble.ir/baradbolhasani"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+              </span><span class="lang-text" data-en="Bale" data-fa="بله">بله</span></div>
+<a class="contact-value" href="https://ble.ir/baradbolhasani" rel="noopener noreferrer" target="_blank">
               baradbolhasani
             </a>
-
-          </div>
-
-
-          <!-- Telegram -->
-
-          <div class="contact-item">
-
-            <div class="contact-label">
-
-              <span class="contact-icon">
+</div>
+<!-- Telegram -->
+<div class="contact-item">
+<div class="contact-label">
+<span class="contact-icon">
                 ✈
-              </span>
-
-              تلگرام
-
-            </div>
-
-            <a
-              class="contact-value"
-              href="https://t.me/barad_bolhasani"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+              </span><span class="lang-text" data-en="Telegram" data-fa="تلگرام">تلگرام</span></div>
+<a class="contact-value" href="https://t.me/barad_bolhasani" rel="noopener noreferrer" target="_blank">
               @barad_bolhasani
             </a>
-
-          </div>
-
-
-          <!-- Rubika - NO LINK -->
-
-          <div class="contact-item">
-
-            <div class="contact-label">
-
-              <span class="contact-icon">
+</div>
+<!-- Rubika - NO LINK -->
+<div class="contact-item">
+<div class="contact-label">
+<span class="contact-icon">
                 R
-              </span>
-
-              روبیکا
-
-            </div>
-
-            <span class="contact-value">
+              </span><span class="lang-text" data-en="Rubika" data-fa="روبیکا">روبیکا</span></div>
+<span class="contact-value">
               09386209160
             </span>
-
-          </div>
-
-        </div>
-
-      </article>
-
-
-      <!-- BARMAN -->
-
-      <article class="contact-card">
-
-        <div class="person-head">
-
-          <div class="person-avatar placeholder">
+</div>
+</div>
+</article>
+<!-- BARMAN -->
+<article class="contact-card">
+<div class="person-head">
+<div class="person-avatar placeholder">
             B
           </div>
-
-          <div class="person-info">
-
-            <h2>
-              بارمان بولحسنی
-            </h2>
-
-            <p>
-              B&B Studio Team
+<div class="person-info">
+<h2><span class="lang-text" data-en="Barman Bolhasani" data-fa="بارمان بولحسنی">بارمان بولحسنی</span></h2>
+<p>
+              B&amp;B Studio Team
             </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="contact-list">
-
-          <!-- Bale -->
-
-          <div class="contact-item">
-
-            <div class="contact-label">
-
-              <span class="contact-icon">
+</div>
+</div>
+<div class="contact-list">
+<!-- Bale -->
+<div class="contact-item">
+<div class="contact-label">
+<span class="contact-icon">
                 B
-              </span>
-
-              بله
-
-            </div>
-
-            <a
-              class="contact-value"
-              href="https://ble.ir/barman_bolhasani"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+              </span><span class="lang-text" data-en="Bale" data-fa="بله">بله</span></div>
+<a class="contact-value" href="https://ble.ir/barman_bolhasani" rel="noopener noreferrer" target="_blank">
               @barman_bolhasani
             </a>
-
-          </div>
-
-
-          <!-- SMS -->
-
-          <div class="contact-item">
-
-            <div class="contact-label">
-
-              <span class="contact-icon">
+</div>
+<!-- SMS -->
+<div class="contact-item">
+<div class="contact-label">
+<span class="contact-icon">
                 ✉
-              </span>
-
-              پیامک
-
-            </div>
-
-            <a
-              class="contact-value"
-              href="sms:09056133508"
-            >
+              </span><span class="lang-text" data-en="SMS" data-fa="پیامک">پیامک</span></div>
+<a class="contact-value" href="sms:09056133508">
               09056133508
             </a>
-
-          </div>
-
-        </div>
-
-      </article>
-
-    </section>
-
-
-    <!-- TELEGRAM BOT -->
-
-    <section class="bot-card">
-
-      <div class="bot-content">
-
-        <div class="bot-icon">
+</div>
+</div>
+</article>
+</section>
+<!-- TELEGRAM BOT -->
+<section class="bot-card">
+<div class="bot-content">
+<div class="bot-icon">
           ✈
         </div>
-
-        <div>
-
-          <h3>
-            ربات تلگرام B&B Studio
-          </h3>
-
-          <p>
-            برای دریافت اطلاعات و دسترسی سریع‌تر به بخش‌های
-            B&B Studio می‌توانید از ربات رسمی ما استفاده کنید.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <a
-        class="bot-button"
-        href="https://t.me/BBStudioBaradBot"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        ورود به ربات
-      </a>
-
-    </section>
-
-
-    <!-- CTA -->
-
-    <section class="cta">
-
-      <h2>
-        ایده‌ای داری؟
-      </h2>
-
-      <p>
-        ما در B&B Studio تلاش می‌کنیم ایده‌ها را به پروژه‌های
-        واقعی، خلاقانه و کاربردی تبدیل کنیم.
-      </p>
-
-      <a
-        class="cta-button"
-        href="projects.html"
-      >
-        مشاهده پروژه‌ها
-      </a>
-
-    </section>
-
-  </main>
-
-
-  <!-- =========================
+<div>
+<h3><span class="lang-text" data-en="B&amp;B Studio Telegram Bot" data-fa="ربات تلگرام B&amp;B Studio">ربات تلگرام B&amp;B Studio</span></h3>
+<p><span class="lang-text" data-en="For information and quick access to B&amp;B Studio sections, you can use our official bot." data-fa="برای دریافت اطلاعات و دسترسی سریع‌تر به بخش‌های B&amp;B Studio می‌توانید از ربات رسمی ما استفاده کنید.">برای دریافت اطلاعات و دسترسی سریع‌تر به بخش‌های B&amp;B Studio می‌توانید از ربات رسمی ما استفاده کنید.</span></p>
+</div>
+</div>
+<a class="bot-button" href="https://t.me/BBStudioBaradBot" rel="noopener noreferrer" target="_blank"><span class="lang-text" data-en="Open Bot" data-fa="ورود به ربات">ورود به ربات</span></a>
+</section>
+<!-- CTA -->
+<section class="cta">
+<h2><span class="lang-text" data-en="Have an Idea?" data-fa="ایده‌ای داری؟">ایده‌ای داری؟</span></h2>
+<p><span class="lang-text" data-en="At B&amp;B Studio, we work to turn ideas into real, creative and practical projects." data-fa="ما در B&amp;B Studio تلاش می‌کنیم ایده‌ها را به پروژه‌های واقعی، خلاقانه و کاربردی تبدیل کنیم.">ما در B&amp;B Studio تلاش می‌کنیم ایده‌ها را به پروژه‌های واقعی، خلاقانه و کاربردی تبدیل کنیم.</span></p>
+<a class="cta-button" href="projects.html"><span class="lang-text" data-en="View Projects" data-fa="مشاهده پروژه‌ها">مشاهده پروژه‌ها</span></a>
+</section>
+</main>
+<!-- =========================
        FOOTER
   ========================== -->
-
-  <footer>
-
-    <p>
-
+<footer>
+<p>
       © <span id="year"></span>
+<strong>B&amp;B Studio</strong><span class="lang-text" data-en="— We Make Ideas Real." data-fa="— We Make Ideas Real.">— We Make Ideas Real.</span></p>
+</footer>
 
-      <strong>B&B Studio</strong>
+<script>
+(function(){
+  const root=document.documentElement;
+  const langBtn=document.getElementById("languageBtn");
+  const nodes=[...document.querySelectorAll(".lang-text")];
+  const title=document.querySelector("title");
+  const meta=document.querySelector('meta[name="description"]');
+  const titleFa=title?.dataset.fa || title?.textContent || "";
+  const titleEn=title?.dataset.en || titleFa;
+  const metaFa=meta?.dataset.fa || meta?.content || "";
+  const metaEn=meta?.dataset.en || metaFa;
+  function setLanguage(lang){
+    lang=lang==="fa"?"fa":"en";
+    root.lang=lang; root.dir=lang==="fa"?"rtl":"ltr";
+    nodes.forEach(n=>n.textContent=lang==="fa"?n.dataset.fa:n.dataset.en);
+    if(title) title.textContent=lang==="fa"?titleFa:titleEn;
+    if(meta) meta.content=lang==="fa"?metaFa:metaEn;
+    if(langBtn){ langBtn.textContent=lang==="en"?"FA":"EN"; langBtn.setAttribute("aria-label",lang==="en"?"Switch to Persian":"تغییر به انگلیسی"); }
+    localStorage.setItem("bb-language",lang);
+  }
+  langBtn?.addEventListener("click",()=>setLanguage(root.lang==="en"?"fa":"en"));
+  setLanguage(localStorage.getItem("bb-language")||"en");
+})();
 
-      — ایده‌ها را واقعی می‌کنیم.
-
-    </p>
-
-  </footer>
-
-
-  <script>
-
-    /* =========================
-       THEME
-    ========================= */
-
-    const themeBtn =
-      document.getElementById("themeBtn");
-
-
-    const savedTheme =
-      localStorage.getItem("bb-theme");
-
-
-    if (savedTheme === "light") {
-
-      document.body.classList.add("light");
-
-      themeBtn.textContent = "🌙";
-
-    } else {
-
-      themeBtn.textContent = "☀️";
-
-    }
-
-
-    themeBtn.addEventListener("click", () => {
-
-      document.body.classList.toggle("light");
-
-
-      const isLight =
-        document.body.classList.contains("light");
-
-
-      localStorage.setItem(
-        "bb-theme",
-        isLight ? "light" : "dark"
-      );
-
-
-      themeBtn.textContent =
-        isLight ? "🌙" : "☀️";
-
-    });
-
-
-    /* =========================
-       YEAR
-    ========================= */
-
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
-
-  </script>
-
-</body>
+const themeBtn=document.getElementById("themeBtn");
+const savedTheme=localStorage.getItem("bb-theme");
+if(savedTheme==="light"){document.body.classList.add("light");themeBtn.textContent="🌙";}else{themeBtn.textContent="☀️";}
+themeBtn.addEventListener("click",()=>{document.body.classList.toggle("light");const isLight=document.body.classList.contains("light");localStorage.setItem("bb-theme",isLight?"light":"dark");themeBtn.textContent=isLight?"🌙":"☀️";});
+const year=document.getElementById("year"); if(year) year.textContent=new Date().getFullYear();
+</script></body>
 </html>
